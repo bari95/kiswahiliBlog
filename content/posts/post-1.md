@@ -1,5 +1,5 @@
 ---
-title: "How to make toys from old Olarpaper"
+title: "How to make toys"
 date: 2022-04-04T01:00:00Z
 image: /images/post/post-1.png
 categories: ["programming"]

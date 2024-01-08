@@ -1,9 +1,9 @@
 {
-  "name": "next-tailwind-boilerplate",
-  "description": "a nextjs and tailwindcss boilerplate by themefisher.com",
+  "name": "Kiswahili East Africa",
+  "description": "a blog for East Africa culture and language - kiswahili",
   "version": "1.0.5",
   "private": true,
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "dev": "node lib/jsonGenerator.js && next dev",
     "build": "node lib/jsonGenerator.js && next build",
