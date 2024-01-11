@@ -115,8 +115,8 @@ const PostSingle = ({
 
         {/* Related posts */}
         <div className="container mt-20">
-          <h2 className="section-title">Related Posts</h2>
-          <div className="row mt-16">
+          <h3 className="text-4xl font-bold text-primary mb-2">Related Posts</h3>
+          <div className="row mt-8">
             {relatedPosts.slice(0, 3).map((post, index) => (
               <div key={"post-" + index} className="mb-12 lg:col-4">
                 <Post post={post} />

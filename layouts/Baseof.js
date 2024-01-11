@@ -10,7 +10,7 @@ const Base = ({
   meta_title,
   description,
   image,
-  noindex,
+ // noindex,
   canonical,
   children,
 }) => {
@@ -32,7 +32,7 @@ const Base = ({
         {canonical && <link rel="canonical" href={canonical} itemProp="url" />}
 
         {/* noindex robots */}
-        {noindex && <meta name="robots" content="noindex,nofollow" />}
+        <meta name="robots" content="index,follow" />
 
         {/* meta-description */}
         <meta
@@ -82,7 +82,7 @@ const Base = ({
           content={`${base_url}${image ? image : meta_image}`}
         />
 
-        {/* twitter-image */}
+        {/* twitter-image*/}
         <meta
           name="twitter:image"
           content={`${base_url}${image ? image : meta_image}`}

@@ -8,6 +8,10 @@
       "name": "About",
       "url": "/about"
     },
+    { "name":"news",
+      "url" :"/news"
+
+    },
     {
       "name": "Elements",
       "url": "/elements"
@@ -22,11 +26,12 @@
       "hasChildren": true,
       "children": [
         {
-          "name": "Categories",
+          "name": "Lessons",
           "url": "/categories"
         }
       ]
     }
+
   ],
   "footer": [
     {

@@ -10,7 +10,7 @@ import { slugify } from "@lib/utils/textConverter";
 
 const Categories = ({ categories }) => {
   return (
-    <Base title={"categories"}>
+    <Base title={"Lessons"}>
       <section className="section pt-0">
         {markdownify(
           "Categories",
@@ -42,7 +42,7 @@ const Categories = ({ categories }) => {
 
 export default Categories;
 
-export const getStaticProps = () => {
+export const getStaticProps= () => {
   const posts = getSinglePage(`content/${blog_folder}`);
   const categories = getTaxonomy(`content/${blog_folder}`, "categories");
   const categoriesWithPostsCount = categories.map((category) => {

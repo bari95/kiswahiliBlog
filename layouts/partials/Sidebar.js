@@ -38,13 +38,15 @@ const Sidebar = ({ posts, categories, className }) => {
             className="socials sidebar-socials mt-6 justify-center"
             source={social}
           />
+
+          
         </div>
       )}
 
       {/* categories widget */}
       {categories.enable && (
         <div className="mt-6 rounded border border-border p-6 dark:border-darkmode-border">
-          <h4 className="section-title mb-12 text-center">
+          <h4 className="section-title mb-6 text-center">
             {featured_posts.title}
           </h4>
           <ul>
@@ -70,7 +72,7 @@ const Sidebar = ({ posts, categories, className }) => {
                   />
                   <path
                     d="M6.7318 4.64021C6.37824 4.21593 6.43556 3.58537 6.85984 3.2318C7.28412 2.87824 7.91468 2.93556 8.26825 3.35984L13.2682 9.35984C13.6218 9.78412 13.5645 10.4147 13.1402 10.7682C12.7159 11.1218 12.0854 11.0645 11.7318 10.6402L6.7318 4.64021Z"
-                    fill="#2ba283"
+                    fill="blue"
                   />
                 </svg>
                 <Link className="py-2" href={`/categories/${category.name}`}>
