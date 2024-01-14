@@ -1,3 +1,4 @@
+
 import config from "@config/config.json";
 import Base from "@layouts/Baseof";
 import ImageFallback from "@layouts/components/ImageFallback";
@@ -28,9 +29,11 @@ const Home = ({
   );
   const showPosts = pagination;
 
+
   return (
     <Base>
       {/* Banner */}
+      
       <section className="section banner relative pb-0">
         <ImageFallback
           className="absolute bottom-0 left-0 z-[-1] w-full"
@@ -47,6 +50,7 @@ const Home = ({
               <div className="banner-title">
                 {markdownify(banner.title, "h1")}
                 {markdownify(banner.title_small, "span")}
+                
               </div>
               {markdownify(banner.content, "p", "mt-4")}
               {banner.button.enable && (
@@ -55,6 +59,7 @@ const Home = ({
                     href={banner.button.link}
                     rel={banner.button.rel}
                   >
+                    
                     {banner.button.label}
                   </Link>
               )}
@@ -77,19 +82,21 @@ const Home = ({
 
       {/* Home main */}
       <section className="section">
+      
         <div className="container">
           <div className="row items-start">
-            <div className="mb-12 lg:mb-0 lg:col-8">
+            <div className="mb-6 lg:mb-0 lg:col-8">
               {/* Featured posts */}
               {featured_posts.enable && (
                 <div className="section">
-                  {markdownify(featured_posts.title, "h2", "section-title")}
+                  {markdownify(featured_posts.title, "h3")}
                   <div className="rounded border border-border p-6 dark:border-darkmode-border">
                     <div className="row">
                       <div className="md:col-6">
                         <Post post={featuredPosts[0]} />
+                        <Post post={featuredPosts[1]} />
                       </div>
-                      <div className="scrollbar-w-[10px] mt-8 max-h-[480px] scrollbar-thin scrollbar-track-gray-100 scrollbar-thumb-border dark:scrollbar-track-gray-800 dark:scrollbar-thumb-darkmode-theme-dark md:mt-0 md:col-6">
+                      <div className="scrollbar-w-[10px] mt-4 max-h-[480px] scrollbar-thin scrollbar-track-gray-100 scrollbar-thumb-border dark:scrollbar-track-gray-800 dark:scrollbar-thumb-darkmode-theme-dark md:mt-0 md:col-6">
                         {featuredPosts
                           .slice(1, featuredPosts.length)
                           .map((post, i, arr) => (
@@ -147,7 +154,7 @@ const Home = ({
               {/* Recent Posts */}
               {recent_posts.enable && (
                 <div className="section pt-0">
-                  {markdownify(recent_posts.title, "h2", "section-title")}
+                  {markdownify(recent_posts.title, "h3")}
                   <div className="rounded border border-border px-6 pt-6 dark:border-darkmode-border">
                     <div className="row">
                       {sortPostByDate.slice(0, showPosts).map((post) => (

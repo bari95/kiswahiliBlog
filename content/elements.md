@@ -144,7 +144,7 @@ Some text to show that the reference links can follow later.
 ### Notice
 
 <Notice type="note">
-  This is a simple note.
+  Th<is is a simple note.
 </Notice>
 
 <Notice type="tip">

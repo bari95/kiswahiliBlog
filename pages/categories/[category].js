@@ -13,7 +13,7 @@ const Category = ({ postsByCategories, category, posts, categories }) => {
     <Base title={category}>
       <div className="section mt-16">
         <div className="container">
-          <h1 className="h2 mb-12">
+          <h1 className="h2 mb-6">
             Showing posts from
             <span className="section-title ml-1 inline-block capitalize">
               {category.replace("-", " ")}
@@ -23,7 +23,7 @@ const Category = ({ postsByCategories, category, posts, categories }) => {
             <div className="lg:col-8">
               <div className="row rounded border border-border p-4 px-3 dark:border-darkmode-border lg:p-6">
                 {postsByCategories.map((post, i) => (
-                  <div key={`key-${i}`} className="col-12 mb-8 sm:col-6">
+                  <div key={`key-${i}`} className="col-12 mb-4 sm:col-6">
                     <Post post={post} />
                   </div>
                 ))}

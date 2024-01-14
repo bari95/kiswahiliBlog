@@ -5,8 +5,8 @@
     "favicon": "/images/favicon.png",
     "logo": "/images/eastLogo5.png",
     "logo_white": "/images/logo-light.png",
-    "logo_width": "150",
-    "logo_height": "39",
+    "logo_width": "100",
+    "logo_height": "80",
     "logo_text": "sw"
   },
   "settings": {
@@ -33,7 +33,7 @@
   "widgets" : {
     "about": {
       "enable": true,
-      "content": "Lorem ipsum dolor sit amet, conse tfctetur adipiscing elit. Vel in in donec iaculis tempasus odio nunc laoreet . Libero ullam rgscorper."
+      "content": "Kiswahili East Africa, this is education platforrm for all levels of students; begginers, intrmidiate and advanced! Welcome"
     },
     "featured_posts": {
       "enable": true,

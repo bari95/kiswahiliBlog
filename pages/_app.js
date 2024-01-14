@@ -32,7 +32,7 @@ const App = ({ Component, pageProps }) => {
       process.env.NODE_ENV === "production" &&
         config.params.tag_manager_id &&
         TagManager.initialize(tagManagerArgs);
-    }, 5000);
+    }, 500); // t was first put 5000
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

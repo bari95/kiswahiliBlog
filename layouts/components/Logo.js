@@ -20,7 +20,7 @@ const Logo = ({ src }) => {
           height={logo_height.replace("px", "") * 2}
           src={
             mounted && (theme === "dark" || resolvedTheme === "dark")
-              ? logo_white
+              ? logo
               : logo
           }
           alt={title}

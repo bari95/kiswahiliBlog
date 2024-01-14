@@ -90,7 +90,7 @@ const Sidebar = ({ posts, categories, className }) => {
       {/* featured widget */}
       {featured_posts.enable && (
         <div className="mt-6 rounded border border-border p-6 dark:border-darkmode-border">
-          <h4 className="section-title mb-12 text-center">Featured</h4>
+          <h4 className="mb-6 text-center">Featured</h4>
           <div className="mb-12 flex items-center justify-center">
             <button
               className={`btn px-5 py-2 ${
@@ -186,8 +186,8 @@ const Sidebar = ({ posts, categories, className }) => {
       {/* newsletter */}
       {newsletter.enable && (
         <div className="mt-6  rounded border border-border p-6 text-center dark:border-darkmode-border">
-          <h4 className="section-title">{newsletter.title}</h4>
-          <p className="mt-10 text-xs">{newsletter.content}</p>
+          <h4>{newsletter.title}</h4>
+          <p className="mt-6 text-xs">{newsletter.content}</p>
           <MailchimpSubscribe
             url={newsletter.malichip_url}
             render={({ subscribe, status, message }) => (

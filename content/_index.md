@@ -1,13 +1,13 @@
 ---
 banner:
-  title: Welcome **!**
-  title_small: "to John Bravo's Blog"
-  content: Are Developer and recently started your own business Already made website to ensure presence wants to develop.
+  title: Shukrani
+  title_small: "word of the day"
+  content: Shukrani means 'thank you'
   image_enable: true
-  image: /images/banner-author.png
+  image: /images/kiswahiliHomePhoto.png
   button:
     enable: true
-    label: Know About Me
+    label: See more
     link: /about
     rel: ""
 
