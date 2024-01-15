@@ -1,7 +1,7 @@
 ---
 title: World's Kiswahili Day
 author: Bari Kaneno
-date: 2023-07-07T02:00:00Z
+date: 2024-01-07T02:00:00Z
 image: /images/post/kiswahiliDay.jpg
 categories: ["swahili day"]
 featured: true

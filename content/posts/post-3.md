@@ -1,25 +1,34 @@
 ---
-title: What you need to know about Photography
-date: 2022-04-02T03:00:00+00:00
-image: /images/post/post-3.png
-categories: ["workstation"]
-featured: true
+title: "dialogue:lovie talk"
+date: 2024-01-015T14:00:00Z
+image: /images/post/janeJohn.jpg
+categories: ["shorts","relationships"]
+featured: false
 draft: false
 ---
 
-Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
 
-## Covid-19 Situation
+<div>
 
-Nam ut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.
+John: I love you Jane!- Nakupenda Jane!
 
-> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
+Jane: No!- Hapana
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
+John: Why no!- Kwanini hapana?
 
-![alter-text](/images/post/post-1.png)
-*Example Caption*
+Jane: You are a lier- Wewe ni mwongo
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
+John: Please trust me- Tafadhali niamini
+
+Jane: I say no leave me alone- Nasema hapana. Niache
+John: Please forgive me!- Tafadhali nisamehe
+Jane: Everyday you say forvige me?- Kila siku unasema nikusamehe?
+John: Please please!- Tafadhali tafadhali!
+Jane: Leave me, Good bye!- Niache. Kwaheri
+
+</div>
+
+
+
+

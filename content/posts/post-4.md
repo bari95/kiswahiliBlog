@@ -1,25 +1,37 @@
 ---
-title: "How to make toys from old Olarpaper"
-date: 2022-04-04T04:00:00Z
-image: /images/post/post-4.png
-categories: ["robotics", "programming"]
-featured: false
+title: "Nakupenda ?"
+date: 2024-01-04T04:00:00Z
+image: /images/post/janeJohn.jpeg
+categories: ["dialogue"]
+featured: true
+author: Mandella Palla
 draft: false
 ---
 
-Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.
+John: I love you Jane!- Nakupenda Jane!
+Jane: No!- Hapana
+John: Why no!- Kwanini hapana?
+Jane: You are a lier- Wewe ni mwongo
+John: Please trust me- Tafadhali niamini
+Jane: I say no leave me alone- Nasema hapana. Niache
+John: Please forgive me!- Tafadhali nisamehe
+Jane: Everyday you say forvige me?- Kila siku unasema nikusamehe?
+John: Please please!- Tafadhali tafadhali!
+Jane: Leave me. Good bye!- Niache. Kwaheri
+---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
+### Relationship |
 
-## Covid-19 Situation
+| #   |    John     |     Jane     |  
+| :-- | :----------: | :----------: | 
+| 1   | I love you Jane!- Nakupenda Jane! | No!- Hapana | 
+| 2   | Why no!- Kwanini hapana? | You are a lier- Wewe ni mwongo | 
+| 3   | Please trust me- Tafadhali niamini | I say no leave me alone- Nasema hapana. Niache | 
+| 4   | Please please!- Tafadhali tafadhali! | Everyday you say forvige me?- Kila siku unasema nikusamehe? | 
+| 5   | Please trust me- Tafadhali niamini | Leave me. Good bye!- Niache. Kwaheri | 
 
-Nam ut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.
+---
 
-> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
 
-![alter-text](/images/post/post-1.png)
-*Example Caption*
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!

@@ -96,7 +96,7 @@
 }
 
 //section-title
-.section-title {
+.section-title,  {
   @apply mb-12 underline decoration-primary decoration-wavy decoration-2 underline-offset-[.5em];
 }
 
@@ -134,7 +134,7 @@ footer .socials {
 // notice
 .notice {
   @apply rounded overflow-x-hidden;
-  .notice-body {
+  .notice-body, {
     @apply text-[#666666] dark:text-darkmode-light;
     p {
       @apply my-0 text-[#666666] dark:text-darkmode-light;

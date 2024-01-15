@@ -199,7 +199,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 ### Table
 
-| #   |    First     |     Last     |       Handle |
+| #   |    John     |     Last     |       Handle |
 | :-- | :----------: | :----------: | -----------: |
 | 1   | Row:1 Cell:1 | Row:1 Cell:2 | Row:1 Cell:3 |
 | 2   | Row:2 Cell:1 | Row:2 Cell:2 | Row:2 Cell:3 |
