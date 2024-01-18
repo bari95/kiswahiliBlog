@@ -155,10 +155,10 @@ const Home = ({
               {recent_posts.enable && (
                 <div className="section pt-0">
                   {markdownify(recent_posts.title, "h3")}
-                  <div className="rounded border border-border px-6 pt-6 dark:border-darkmode-border">
+                  <div className="rounded border border-border px-6 pt-3 dark:border-darkmode-border">
                     <div className="row">
                       {sortPostByDate.slice(0, showPosts).map((post) => (
-                        <div className="mb-8 md:col-6" key={post.slug}>
+                        <div className="mb-3 md:col-6" key={post.slug}>
                           <Post post={post} />
                         </div>
                       ))}
@@ -174,7 +174,7 @@ const Home = ({
             </div>
             {/* sidebar */}
             <Sidebar
-              className={"lg:mt-[9.5rem]"}
+              className={"lg:mt-[3.5rem]"}
               posts={posts}
               categories={categories}
             />

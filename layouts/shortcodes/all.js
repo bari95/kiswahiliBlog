@@ -5,6 +5,7 @@ import Notice from "./Notice";
 import Tab from "./Tab";
 import Tabs from "./Tabs";
 import Video from "./Video";
+import Audio from "./Audio";
 import Youtube from "./Youtube";
 
 const shortcodes = {
@@ -15,6 +16,7 @@ const shortcodes = {
   Tabs,
   Notice,
   Code,
+  Audio,
   Youtube
 };
 

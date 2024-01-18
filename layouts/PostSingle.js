@@ -89,14 +89,14 @@ const PostSingle = ({
                     {dateFormat(date)}
                   </li>
                 </ul>
-                <div className="content mb-16">
+                <div className="content mb-6">
                   <MDXRemote {...mdxContent} components={shortcodes} />
                 </div>
                 {config.settings.InnerPaginationOptions.enableBottom && (
                   <InnerPagination posts={posts} date={date} />
                 )}
               </article>
-              <div className="mt-16">
+              <div className="mt-8">
                 {disqus.enable && (
                   <DiscussionEmbed
                     key={theme}
@@ -116,7 +116,7 @@ const PostSingle = ({
         {/* Related posts */}
         <div className="container mt-20">
           <h3 className="text-4xl font-bold text-primary mb-2">Related Posts</h3>
-          <div className="row mt-8">
+          <div className="row mt-6">
             {relatedPosts.slice(0, 3).map((post, index) => (
               <div key={"post-" + index} className="mb-12 lg:col-4">
                 <Post post={post} />

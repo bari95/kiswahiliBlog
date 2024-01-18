@@ -8,7 +8,7 @@ const About = ({ data }) => {
   const { title, image, education, experience } = frontmatter;
 
   return (
-    <section className="section mt-16">
+    <section className="section mt-8">
       <div className="container text-center">
         {image && (
           <div className="mb-8">
@@ -31,7 +31,7 @@ const About = ({ data }) => {
         <div className="row mt-24 text-left lg:flex-nowrap">
           <div className="lg:col-6 ">
             <div className="rounded border border-border p-6 dark:border-darkmode-border ">
-              {markdownify(education.title, "h2", "section-title mb-12")}
+              {markdownify(education.title, "h2", "mb-6")}
               <div className="row">
                 {education.degrees.map((degree, index) => (
                   <div className="mb-7 md:col-6" key={"degree-" + index}>
@@ -46,7 +46,7 @@ const About = ({ data }) => {
           </div>
           <div className="experience mt-10 lg:mt-0 lg:col-6">
             <div className="rounded border border-border p-6 dark:border-darkmode-border ">
-              {markdownify(experience.title, "h2", "section-title mb-12")}
+              {markdownify(experience.title, "h2", "mb-6")}
               <ul className="row">
                 {experience?.list?.map((item, index) => (
                   <li

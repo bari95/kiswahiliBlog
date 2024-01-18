@@ -1,6 +1,6 @@
 ---
-title: About The Author
-image: /images/author.png
+title: About Us
+image: /images/eastLogo5.png
 description: "meta description"
 layout: about
 education:
