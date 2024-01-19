@@ -2,7 +2,7 @@
 title: "dialogue:lovie talk"
 date: 2024-01-015T14:00:00Z
 image: /images/post/janeJohn.jpg
-categories: ["shorts","relationships"]
+categories: ["conversations"]
 featured: false
 draft: false
 ---

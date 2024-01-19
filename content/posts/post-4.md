@@ -18,11 +18,11 @@ It's an invitation to explore the depths of love, an invitation to immerse yours
 
 | #   |    John     |     Jane     |  
 | :-- | :----------: | :----------: | 
-| 1   | I love you Jane!- Nakupenda Jane! | No!- Hapana | 
-| 2   | Why no!- Kwanini hapana? | You are a lier- Wewe ni mwongo | 
-| 3   | Please trust me- Tafadhali niamini | I say no leave me alone- Nasema hapana. Niache | 
-| 4   | Please please!- Tafadhali tafadhali! | Everyday you say forvige me?- Kila siku unasema nikusamehe? | 
-| 5   | Please trust me- Tafadhali niamini | Leave me. Good bye!- Niache. Kwaheri | 
+| 1   | I love you Jane!- Nakupenda Jane! <Audio src="/audios/conversations/NakupendaJane.mp3" /> | No!- Hapana <Audio src="/audios/conversations/Hapana.mp3" /> | 
+| 2   | Why not ?- Kwanini hapana ? <Audio src="/audios/conversations/KwaniniHapana.mp3" />  | You are a lier- Wewe ni mwongo <Audio src="/audios/conversations/WeweniMwongo.mp3" /> | 
+| 3   | Please trust me- Tafadhali niamini <Audio src="/audios/conversations/TafadhaliNiamini.mp3" /> | I say no leave me alone- Nasema hapana. Niache <Audio src="/audios/conversations/NasemaHapana.aac" />  | 
+| 4   | Please please!- Tafadhali tafadhali! <Audio src="/audios/conversations/TafadhaliTafadhali.mp3" /> | Everyday you say forvige me?- Kila siku unasema nikusamehe? <Audio src="/audios/conversations/KilaSiku1.mp3" />  | 
+| 5   | Please trust me- Tafadhali niamini <Audio src="/audios/conversations/TafadhaliNiamini.mp3" /> | Leave me. Good bye!- Niache. Kwaheri <Audio src="/audios/conversations/NiacheKwaheri.mp3" /> | 
 
 ---
 
