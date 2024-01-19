@@ -19,7 +19,7 @@ const Audio = ({ src, type = 'audio/mp3', ...rest }) => {
       {!isPlaying && (
         <button
           onClick={handlePlay}
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded backdrop-blur-md backdrop-opacity-75"
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
         >
           Play
         </button>
