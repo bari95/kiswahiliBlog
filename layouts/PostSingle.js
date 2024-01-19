@@ -44,6 +44,8 @@ const PostSingle = ({
               <article>
                 <div className="relative">
                   {image && (
+                    <div className="mt 0">
+
                     <Image
                       src={image}
                       height="500"
@@ -51,6 +53,7 @@ const PostSingle = ({
                       alt={title}
                       className="rounded-lg"
                     />
+                    </div>
                   )}
                   <ul className="absolute top-3 left-2 flex flex-wrap items-center">
                     {categories.map((tag, index) => (
@@ -118,7 +121,7 @@ const PostSingle = ({
           <h3 className="text-4xl font-bold text-primary mb-2">Related Posts</h3>
           <div className="row mt-6">
             {relatedPosts.slice(0, 3).map((post, index) => (
-              <div key={"post-" + index} className="mb-12 lg:col-4">
+              <div key={"post-" + index} className="mb-6 lg:col-4">
                 <Post post={post} />
               </div>
             ))}

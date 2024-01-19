@@ -1,3 +1,4 @@
+
 import config from "@config/config.json";
 import Base from "@layouts/Baseof";
 import Pagination from "@layouts/components/Pagination";

@@ -22,7 +22,7 @@
   },
   "params": {
     "tag_manager_id": "",
-    "footer_content": "Lorem ipsum dolor sit amt, conse adip iscing. donec iaculis tempasus laoreet. Libero ullam rgscper.",
+    "footer_content": "Kiswahili East Africa is an education platforrm dedicated to learners of Kiswahili language from all over the world with different backgrounds; begginers, intermidiate and advanced! Welcome",
     "copyright": ""
   },
   "metadata" : {
@@ -33,7 +33,7 @@
   "widgets" : {
     "about": {
       "enable": true,
-      "content": "Kiswahili East Africa, this is education platforrm for all levels of students; begginers, intrmidiate and advanced! Welcome"
+      "content": "Kiswahili East Africa is an education platforrm dedicated to learners of Kiswahili language from all over the world with different backgrounds; begginers, intermidiate and advanced! Welcome"
     },
     "featured_posts": {
       "enable": true,
@@ -46,8 +46,8 @@
     },
     "newsletter": {
       "enable": true,
-      "title": "Newsletter",
-      "content": "Join thousands of Tiny Salt subscribers and get our best recipes delivered each week!",
+      "title": "Stay Connected",
+      "content": "Join thousands of Tiny Salt subscribers and be the first to get our new lessons each week !",
       "privacy_policy_page": "#",
       "malichipm_url": ""
     }

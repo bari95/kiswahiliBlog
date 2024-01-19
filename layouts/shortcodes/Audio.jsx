@@ -6,7 +6,7 @@ function Audio({ title, src, ...rest }) {
         
       <audio
         className="overflow-hidden rounded"
-        controls
+        controls="1"
         {...rest}
       >
         <source
