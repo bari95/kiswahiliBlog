@@ -18,7 +18,7 @@ In the heart of Kiswahili, "nakupenda" holds the magic of love. Imagine it like 
 | 2   | Why not ?- Kwanini hapana ? <Audio src="/audios/conversations/KwaniniHapana.mp3" />  | You are a lier- Wewe ni mwongo <Audio src="/audios/conversations/WeweniMwongo.mp3" /> | 
 | 3   | Please trust me- Tafadhali niamini <Audio src="/audios/conversations/TafadhaliNiamini.mp3" /> | I say no leave me alone- Nasema hapana. Niache <Audio src="/audios/conversations/NasemaHapana.aac" />  | 
 | 4   | Please please!- Tafadhali tafadhali! <Audio src="/audios/conversations/TafadhaliTafadhali.mp3" /> | Everyday you say forvige me?- Kila siku unasema nikusamehe? <Audio src="/audios/conversations/KilaSiku1.mp3" />  | 
-| 5   | Please trust me- Tafadhali niamini <Audio src="/audios/conversations/TafadhaliNiamini.mp3" /> | Leave me. Good bye!- Niache. Kwaheri <Audio src="/audios/conversations/NiacheKwaheri.mp3" /> | 
+| 5   | Please trust me- Tafadhali niamini <Audio src="/audios/conversations/TafadhaliNiamini.mp3" /> | Leave me. Good bye!- Niache. Kwaheri <Audio src="/audios/conversations/NiacheKwaheri2.mp3" /> | 
 
 ---
 
