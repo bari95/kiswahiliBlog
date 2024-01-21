@@ -49,7 +49,7 @@ const PostSingle = ({
                     <Image
                       src={image}
                       height="500"
-                      width="1000"
+                      width="500"
                       alt={title}
                       className="rounded-lg"
                     />
