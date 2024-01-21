@@ -74,7 +74,7 @@ const SearchModal = ({ searchModal, setSearchModal }) => {
       </button>
 
       {/* Dropdown for choosing search type */}
-      <div className="mb-4 w-full">
+      <div className="mb-4 bg-white w-full">
         <label className="block text-sm text-gray-600 mb-1">Search Type:</label>
         <select
           value={searchType}
@@ -88,7 +88,7 @@ const SearchModal = ({ searchModal, setSearchModal }) => {
 
       {/* Dropdown for translation direction */}
       {searchType === 'translation' && (
-        <div className="mb-4 mt-0 w-full">
+        <div className="mb-4 mt-0 bg-white w-full">
           <label className="block text-sm text-gray-600 mb-1">Translation Direction:</label>
           <select
             value={translationDirection}
