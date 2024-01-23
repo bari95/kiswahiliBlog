@@ -56,7 +56,9 @@ const Post = ({ post }) => {
         </li>
         <li className="inline-flex items-center font-secondary text-xs leading-3">
           <FaRegCalendar className="mr-1.5" />
-          {dateFormat(post.frontmatter.date)}
+          {/*
+          dateFormat(post.frontmatter.date)
+          */}
         </li>
       </ul>
       <p>{post.content.slice(0, Number(summary_length))}</p>
