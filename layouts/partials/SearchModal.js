@@ -1,70 +1,71 @@
-// Import necessary components
 import React, { useState, useEffect } from 'react';
 import { IoCloseCircleOutline } from 'react-icons/io5';
-import SearchResults from './search/SearchResults';
+import SearchResults from './searchTrans/SearchResults';
 import { useRouter } from 'next/router';
 
 const SearchModal = ({ searchModal, setSearchModal }) => {
   const router = useRouter();
   const [input, setInput] = useState('');
   const [searchType, setSearchType] = useState('post');
-  const [translationDirection, setTranslationDirection] = useState('en-to-sw'); // Default translation direction
+  const [translationDirection, setTranslationDirection] = useState('en-to-sw');
   const [searchResults, setSearchResults] = useState(null);
+  const [searching, setSearching] = useState(false);
+  const [searchIconClicked, setSearchIconClicked] = useState(false);
+
+  const handleSearch = async () => {
+    try {
+      setSearching(true);
+
+      if (searchType === 'post' && input.trim() !== '') {
+        router.push(`/search?key=${encodeURIComponent(input)}`);
+        setSearchResults(null);
+      } else if (searchType === 'translation') {
+        const translationResult = {
+          translation: `Translation of '${input}' ${
+            translationDirection === 'en-to-sw' ? 'from English to Swahili' : 'from Swahili to English'
+          }`,
+          imageUrl: '/images/post/kiswahiliday2.jpg',
+          examples: ['Example sentence 1', 'Example sentence 2'],
+        };
+        setSearchResults([translationResult]);
+      }
+    } catch (error) {
+      console.error('Error handling search:', error);
+    } finally {
+      setSearching(false);
+      setSearchIconClicked(false);
+    }
+  };
 
   useEffect(() => {
-    const handleSearch = async () => {
-      try {
-        // Simulate API request delay
-       // await new Promise((resolve) => setTimeout(resolve, 1000));
-
-        if (searchType === 'post') {
-          // Handle post search logic
-
-
-        //  const postSearchResults = []; // Replace with actual post search logic
-        //  setSearchResults(postSearchResults);
-
-          const postSearchResults = [
-
-
-
-            // Replace with actual post search logic
-            { title: 'Post 1', content: 'This is the content of Post 1' },
-            { title: 'Post 2', content: 'This is the content of Post 2' },
-          ];
-          setSearchResults(postSearchResults);
-        } else if (searchType === 'translation') {
-          // Handle translation search logic
-         /* const translationResult = `Translation of '${input}' ${
-            translationDirection === 'en-to-sw' ? 'from English to Swahili' : 'from Swahili to English'
-          }`;
-          setSearchResults([{ translation: translationResult }]); // Use an array for consistency */
-
-          const translationResult = {
-            translation: `Translation of '${input}' ${
-              translationDirection === 'en-to-sw' ? 'from English to Swahili' : 'from Swahili to English'
-            }`,
-            imageUrl: '/images/post/kiswahiliday2.jpg', // Replace with an actual image URL
-            examples: ['Example sentence 1', 'Example sentence 2'], // Replace with actual example sentences
-          };
-          setSearchResults(translationResult); // Use an array for consistency
-        }
-      } catch (error) {
-        console.error('Error handling search:', error);
-      }
-    };
-
-    if (searchModal && input.trim() !== '') {
+    if (searchModal && searchIconClicked && !searching) {
       handleSearch();
-    } else {
-      setSearchResults(null);
     }
-  }, [searchModal, input, searchType, translationDirection]);
+  }, [searchModal, searchType, translationDirection, searching, searchIconClicked]);
 
   const closeModal = () => {
     setSearchModal(false);
     setInput('');
     setSearchResults(null);
+    setSearching(false);
+    setSearchIconClicked(false);
+  };
+
+  const handlePostSearch = () => {
+    setSearchIconClicked(true);
+    handleSearch();
+  };
+
+  const handleInputKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      setSearchIconClicked(true);
+      handlePostSearch();
+    }
+  };
+
+  const handleSearchButtonClick = () => {
+    setSearchIconClicked(true);
+    handlePostSearch();
   };
 
   return (
@@ -73,8 +74,11 @@ const SearchModal = ({ searchModal, setSearchModal }) => {
         <IoCloseCircleOutline />
       </button>
 
-      {/* Dropdown for choosing search type */}
-      <div className="mb-4 bg-white w-full">
+      <h2 className="text-lg font-bold mb-0 text-center">
+        {searchType === 'post' ? 'Search Posts' : 'Translate Text'}
+      </h2>
+
+      <div className="mb-2 bg-white rounded overflow-hidden">
         <label className="block text-sm text-gray-600 mb-1">Search Type:</label>
         <select
           value={searchType}
@@ -86,9 +90,8 @@ const SearchModal = ({ searchModal, setSearchModal }) => {
         </select>
       </div>
 
-      {/* Dropdown for translation direction */}
       {searchType === 'translation' && (
-        <div className="mb-4 mt-0 bg-white w-full">
+        <div className="mb-4 mt-0 bg-white rounded overflow-hidden">
           <label className="block text-sm text-gray-600 mb-1">Translation Direction:</label>
           <select
             value={translationDirection}
@@ -103,11 +106,16 @@ const SearchModal = ({ searchModal, setSearchModal }) => {
 
       <input
         type="text"
-        className="form-input bg-body placeholder:text-base dark:bg-darkmode-body mb-4"
+        className="form-input bg-body placeholder:text-base dark:bg-darkmode-body mb-0 w-full"
         placeholder={searchType === 'post' ? 'Search for posts...' : 'Enter text to translate...'}
         value={input}
         onChange={(e) => setInput(e.target.value)}
+        onKeyDown={handleInputKeyDown}
       />
+
+      <button onClick={handleSearchButtonClick} className="bg-blue-500 text-white px-4 py-2 rounded h-50 w-full mt-0">
+        {searchType === 'post' ? 'Search Posts' : 'Translate'}
+      </button>
 
       {searchResults && <SearchResults results={searchResults} />}
     </div>
