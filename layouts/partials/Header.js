@@ -108,9 +108,13 @@ const Header = () => {
                   )}
                 </React.Fragment>
               ))}
+              <div id="google_translate_element" className="border border-gray-300 p-4">
+              
+              </div>
             </ul>
             {/* header social */}
             <Social source={socical} className="socials" />
+            
           </div>
           <ThemeSwitcher />
           {/* Header search */}

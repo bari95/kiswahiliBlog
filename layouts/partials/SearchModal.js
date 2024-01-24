@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { IoCloseCircleOutline } from 'react-icons/io5';
 import SearchResults from './searchTrans/SearchResults';
 import { useRouter } from 'next/router';
+//const translate =require('@iamtraction/google-translate');
 
 const SearchModal = ({ searchModal, setSearchModal }) => {
   const router = useRouter();
@@ -20,12 +21,13 @@ const SearchModal = ({ searchModal, setSearchModal }) => {
         router.push(`/search?key=${encodeURIComponent(input)}`);
         setSearchResults(null);
       } else if (searchType === 'translation') {
+        // Use google-translate-api for translation
+       // const result = await translate(input, { from: 'sw', to: 'en' });
+       const result=""
         const translationResult = {
-          translation: `Translation of '${input}' ${
-            translationDirection === 'en-to-sw' ? 'from English to Swahili' : 'from Swahili to English'
-          }`,
+          translation: `Translation of '${input}' from Swahili to English: ${result.text}`,
           imageUrl: '/images/post/kiswahiliday2.jpg',
-          examples: ['Example sentence 1', 'Example sentence 2'],
+          examples: [], // You can add examples if available
         };
         setSearchResults([translationResult]);
       }
