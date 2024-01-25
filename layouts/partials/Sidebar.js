@@ -140,7 +140,7 @@ const Sidebar = ({ posts, categories, className }) => {
                       </h3>
                       <p className="inline-flex items-center font-secondary text-xs">
                         <FaRegCalendar className="mr-1.5" />
-                        {dateFormat(post.frontmatter.date)}
+                        {/*dateFormat(post.frontmatter.date)*/}
                       </p>
                     </div>
                   </div>
@@ -175,7 +175,7 @@ const Sidebar = ({ posts, categories, className }) => {
                       </h3>
                       <p className="inline-flex items-center font-secondary text-xs">
                         <FaRegCalendar className="mr-1.5" />
-                        {dateFormat(post.frontmatter.date)}
+                        {/*dateFormat(post.frontmatter.date)*/}
                       </p>
                     </div>
                   </div>
