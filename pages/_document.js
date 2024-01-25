@@ -10,6 +10,46 @@ const Document = () => {
     <Html lang="en">
       <Head>
         {/* Favicon */}
+
+        <style>{`
+            /* Your global styles here */
+           
+            .goog-logo-link {
+              display:none !important;
+          } 
+
+          .goog-te-combo {
+            width: 80px; /* Adjust the minimum width as needed */
+            color:blue;
+            border-radius:10px;
+            margin-left:40px
+          }
+          
+          .goog-te-combo-arrow {
+            width: 20px; /* Adjust the width as needed */
+          }
+
+          .skiptranslate {
+            width:15%
+          }
+
+          #g{}
+          .goog-te-banner-frame {
+            width: 0; /* Set the desired width */
+            /* Add other styling properties as needed */
+          }
+              
+          .goog-te-gadget{
+              color: transparent !important;
+              width:15%
+          }
+          #google_translate_element {width:15%} 
+          #google_translate_element a { display: none; }
+          #google_translate_element span { display: none; }
+
+          
+         
+          `}</style>
         <link rel="shortcut icon" href={favicon} />
         {/* Theme meta */}
         <meta name="theme-name" content="geeky-nextjs" />
@@ -24,6 +64,11 @@ const Document = () => {
           media="(prefers-color-scheme: dark)"
           content="#000"
         />
+        <meta 
+          name="google" 
+          content="notranslate" 
+        />
+        
         {/* Google Translate script */}
         <script async type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateLoaded"></script>
       </Head>
@@ -33,7 +78,7 @@ const Document = () => {
         <NextScript />
 
         {/* Google Translate container */}
-        <div id="google_translate_element" className="border p-4">
+        <div id="google_translate_element" style={{display:'none'}} className="border p-4">
           {/* Your content goes here */}
           <p>Hello, this is a sample content for Google Translate.</p>
         </div>

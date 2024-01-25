@@ -108,7 +108,7 @@ const Header = () => {
                   )}
                 </React.Fragment>
               ))}
-              <div id="google_translate_element" className="border border-gray-300 p-4">
+              <div id="google_translate_element" className="nav-dropdown-item">
               
               </div>
             </ul>
