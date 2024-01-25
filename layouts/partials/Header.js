@@ -10,18 +10,17 @@ import React, { useEffect, useState } from "react";
 import { IoSearch } from "react-icons/io5";
 
 const Header = () => {
-  const [imageLoaded, setImageLoaded] = useState(false);
+  // distructuring the main menu from menu object
   const { main } = menu;
+
+  // states declaration
   const [searchModal, setSearchModal] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
+
+  // Router
   const router = useRouter();
 
-  useEffect(() => {
-    const img = new Image();
-    img.src = "/images/maasai_woman.jpg";
-    img.onload = () => setImageLoaded(true);
-  }, []);
-
+  //stop scrolling when nav is open
   useEffect(() => {
     if (showMenu) {
       document.body.classList.add("menu-open");
@@ -31,108 +30,134 @@ const Header = () => {
   }, [showMenu]);
 
   return (
-    <header className="relative md:h-[100px] lg:h-[700px] xl:h-[800px] 2xl:h-[00px] flex items-center">
-      {imageLoaded && (
-        <>
+    <header className="header" style={{
+        backgroundImage: `url('/images/maasai_woman.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}>
+      <nav className="navbar container px-1 sm:px-8">
+        <div className="order-0">
+          <Logo />
+        </div>
+        <div className="flex items-center space-x-4 xl:space-x-8">
           <div
-            className="absolute inset-0 bg-black opacity-40"
-            style={{
-              backgroundImage: `url('/images/maasai_woman.jpg')`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          ></div>
-          <div className="container mx-auto px-4 relative z-10">
-            <div className="flex items-center justify-between">
-              <Logo />
-              <div className="flex items-center space-x-4 lg:space-x-8">
-                <ThemeSwitcher />
-                <div
-                  className="cursor-pointer text-white"
-                  onClick={() => setSearchModal(true)}
-                >
-                  <IoSearch />
-                </div>
-                <button
-                  onClick={() => setShowMenu(!showMenu)}
-                  className="lg:hidden cursor-pointer text-white"
-                >
-                  {showMenu ? (
-                    <svg className="h-6 w-6 fill-current" viewBox="0 0 20 20">
-                      <title>Menu Close</title>
-                      <polygon
-                        points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
-                        transform="rotate(45 10 10)"
-                      />
-                    </svg>
-                  ) : (
-                    <svg className="h-6 w-6 fill-current" viewBox="0 0 20 20">
-                      <title>Menu Open</title>
-                      <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z" />
-                    </svg>
-                  )}
-                </button>
-              </div>
-            </div>
-            <div
-              className={`lg:hidden ${
-                showMenu ? "block" : "hidden"
-              } absolute top-20 right-0 w-full bg-white shadow-lg`}
+            className={`collapse-menu ${
+              !showMenu && "translate-x-full"
+            } lg:flex lg:translate-x-0`}
+          >
+            <button
+              className="absolute right-6 top-11 lg:hidden"
+              onClick={() => setShowMenu(false)}
             >
-              <ul className="flex flex-col space-y-4 p-4">
-                {main.map((menu, i) => (
-                  <li key={`menu-${i}`}>
-                    {menu.hasChildren ? (
-                      <div className="group relative">
-                        <span className="cursor-pointer inline-flex items-center">
-                          {menu.name}
-                          <svg
-                            className="h-4 w-4 ml-2 fill-current transition-transform group-hover:rotate-90"
-                            viewBox="0 0 20 20"
-                          >
-                            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                          </svg>
-                        </span>
-                        <ul
-                          className="hidden ml-4 group-hover:block transition-all duration-300"
-                          aria-hidden={!showMenu}
+              <svg className="h-4 w-4 fill-current" viewBox="0 0 20 20">
+                <title>Menu Close</title>
+                <polygon
+                  points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
+                  transform="rotate(45 10 10)"
+                />
+              </svg>
+            </button>
+            <ul
+              id="nav-menu"
+              className="navbar-nav w-full md:w-auto md:space-x-1 lg:flex xl:space-x-2"
+            >
+              {main.map((menu, i) => (
+                <React.Fragment key={`menu-${i}`}>
+                  {menu.hasChildren ? (
+                    <li className="nav-item nav-dropdown group relative">
+                      <span
+                        className={`nav-link ${
+                          menu.children
+                            .map((c) => c.url)
+                            .includes(router.asPath) && "active"
+                        } inline-flex items-center`}
+                      >
+                        {menu.name}
+                        <svg
+                          className="h-4 w-4 fill-current"
+                          viewBox="0 0 20 20"
                         >
-                          {menu.children.map((child, i) => (
-                            <li key={`children-${i}`}>
-                              <Link
-                                href={child.url}
-                                className={`block ${
-                                  router.asPath === child.url
-                                    ? "text-primary"
-                                    : ""
-                                }`}
-                              >
-                                {child.name}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    ) : (
+                          <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                        </svg>
+                      </span>
+                      <ul className="nav-dropdown-list hidden transition-all duration-300 group-hover:top-[46px] group-hover:block md:invisible md:absolute md:top-[60px] md:block md:opacity-0 md:group-hover:visible md:group-hover:opacity-100">
+                        {menu.children.map((child, i) => (
+                          <li
+                            className="nav-dropdown-item"
+                            key={`children-${i}`}
+                          >
+                            <Link
+                              href={child.url}
+                              className={`nav-dropdown-link block ${
+                                router.asPath === child.url && "active"
+                              }`}
+                            >
+                              {child.name}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </li>
+                  ) : (
+                    <li className="nav-item">
                       <Link
                         href={menu.url}
-                        className={`block ${
-                          router.asPath === menu.url ? "text-primary" : ""
+                        className={`nav-link block ${
+                          router.asPath === menu.url && "active"
                         }`}
                       >
                         {menu.name}
                       </Link>
-                    )}
-                  </li>
-                ))}
-              </ul>
-            </div>
+                    </li>
+                  )}
+                </React.Fragment>
+              ))}
+              <div id="google_translate_element" className="nav-dropdown-item">
+              
+              </div>
+            </ul>
+            {/* header social */}
+            <Social source={socical} className="socials" />
+            
           </div>
-          <SearchModal
-            searchModal={searchModal}
-            setSearchModal={setSearchModal}
-          />
-        </>
+          <ThemeSwitcher />
+          {/* Header search */}
+          <div
+            className="search-icon"
+            onClick={() => {
+              setSearchModal(true);
+            }}
+          >
+            <IoSearch />
+          </div>
+          <button
+            onClick={() => setShowMenu(!showMenu)}
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-primary text-white lg:hidden"
+          >
+            {showMenu ? (
+              <svg className="h-4 w-4 fill-current" viewBox="0 0 20 20">
+                <title>Menu Close</title>
+                <polygon
+                  points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
+                  transform="rotate(45 10 10)"
+                />
+              </svg>
+            ) : (
+              <svg className="h-4 w-4 fill-current" viewBox="0 0 20 20">
+                <title>Menu Open</title>
+                <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z" />
+              </svg>
+            )}
+          </button>
+        </div>
+
+        <SearchModal
+          searchModal={searchModal}
+          setSearchModal={setSearchModal}
+        />
+      </nav>
+      {showMenu && (
+        <div className="header-backdrop absolute top-0 left-0 h-[100vh] w-full bg-black/50 lg:hidden"></div>
       )}
     </header>
   );
