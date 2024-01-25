@@ -31,11 +31,11 @@ const Header = () => {
   }, [showMenu]);
 
   return (
-    <header className="relative flex items-center">
+    <header className="relative md:h-[100px] lg:h-[700px] xl:h-[800px] 2xl:h-[00px] flex items-center">
       {imageLoaded && (
         <>
           <div
-            className="absolute inset-0 bg-black opacity-30"
+            className="absolute inset-0 bg-black opacity-40"
             style={{
               backgroundImage: `url('/images/maasai_woman.jpg')`,
               backgroundSize: "cover",
