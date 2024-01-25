@@ -4,7 +4,7 @@
     "base_url": "/",
     "favicon": "/images/favicon.png",
     "logo": "/images/eastLogo5.png",
-    "logo_white": "/images/logo-light.png",
+    "logo_white": "/images/whiteLogo2.png",
     "logo_width": "100",
     "logo_height": "80",
     "logo_text": "sw"
@@ -27,7 +27,7 @@
   },
   "metadata" : {
     "meta_author": "Anonymous",
-    "meta_image": "/images/og-image.png",
+    "meta_image": "/images/whiteLogo2.png",
     "meta_description": "kiswahili"
   },
   "widgets" : {
