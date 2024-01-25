@@ -30,7 +30,7 @@ const Document = () => {
           }
 
           .skiptranslate {
-            width:15%
+            width:50px
           }
 
           #g{}
