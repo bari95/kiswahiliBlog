@@ -126,8 +126,12 @@ const Home = ({
                                   </Link>
                                 </h3>
                                 <p className="inline-flex items-center font-bold">
-                                  <FaRegCalendar className="mr-1.5" />
-                                  {dateFormat(post.frontmatter.date)}
+                                   {/* <FaRegCalendar className="mr-1.5" /> */} 
+                        {/*dateFormat(post.frontmatter.date)*/}
+                                 {
+                                  post.frontmatter.author === "" ? "anonymous" :
+                                 (post.frontmatter.author === undefined ? "anonymous" :post.frontmatter.author )
+                                 }
                                 </p>
                               </div>
                             </div>

@@ -38,7 +38,7 @@
     "featured_posts": {
       "enable": true,
       "title": "Blog Categories",
-      "showPost": 2
+      "showPost": 10
     },
     "categories": {
       "enable": true,

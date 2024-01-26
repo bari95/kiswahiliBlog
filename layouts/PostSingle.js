@@ -37,7 +37,7 @@ const PostSingle = ({
 
   return (
     <Base title={title} description={description}>
-      <section className="section single-blog mt-6">
+      <section className="section single-blog mt-6 ">
         <div className="container">
           <div className="row">
             <div className="lg:col-8">
@@ -88,8 +88,8 @@ const PostSingle = ({
                     </Link>
                   </li>
                   <li className="inline-flex items-center font-secondary text-xs leading-3">
-                    <FaRegCalendar className="mr-1.5" />
-                    {dateFormat(date)}
+                    {/* <FaRegCalendar className="mr-1.5" /> */} 
+                        {/*dateFormat(post.frontmatter.date)*/}
                   </li>
                 </ul>
                 <div className="content mb-6">
