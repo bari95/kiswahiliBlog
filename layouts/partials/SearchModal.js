@@ -15,7 +15,7 @@ const SearchModal = ({ searchModal, setSearchModal }) => {
       setSearching(true);
 
       if (input.trim() !== '') {
-        router.push(`/search?key=${encodeURIComponent(input)}`);
+        router.push(`/search?key=${encodeURIComponent(input.trim())}`);
         setSearchResults(null);
       }
     } catch (error) {
