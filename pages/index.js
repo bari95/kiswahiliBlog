@@ -143,7 +143,7 @@ const Home = ({
                 </div>
               )}
 
-              {/* Promotion */}
+              {/* Promotion 
               {promotion.enable && (
                 <Link href={promotion.link} className="section block pt-0">
                   <ImageFallback
@@ -155,6 +155,7 @@ const Home = ({
                   />
                 </Link>
               )}
+              */}
 
               {/* Recent Posts */}
               {recent_posts.enable && (
