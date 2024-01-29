@@ -1,20 +1,20 @@
 ---
-title: "Let’s, Talk </br> About You"
+title: "Let’s Talk"
 description: "meta description"
-phone: "+211234565523"
-mail: "info@email.com"
-location: "9567 Turner Trace Apt. BC C3G8A4"
+phone: "+255767873162"
+mail: "aron.pallangyo90@gmail.com"
+location: "Arusha, Tanzania"
 form_action: "#"
 layout: "contact"
 addresses:
   - icon: FaUserAlt
-    content: +211234565523
-    link: tel:+211234565523
+    content: +255767873162
+    tel: +255767873162
   - icon: FaMapMarkerAlt
     content: info@email.com
     link: mailto:info@email.com
   - icon: FaLocation
-    content: 9567 Turner Trace Apt. BC C3G8A4
+    content: Arusha, Tanzania
 
 draft: false
 ---

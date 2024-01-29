@@ -50,7 +50,7 @@ const Contact = ({ data }) => {
                   className="form-input w-full"
                   name="name"
                   type="text"
-                  placeholder="Thomas Milano"
+                  placeholder="Bari Kaneno"
                   required
                 />
               </div>
@@ -80,7 +80,7 @@ const Contact = ({ data }) => {
                   className="form-input w-full"
                   name="subject"
                   type="text"
-                  placeholder="Blog advertisement"
+                  placeholder="advertisement"
                   required
                 />
               </div>
