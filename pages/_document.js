@@ -52,7 +52,7 @@ const Document = () => {
           `}</style>
         <link rel="shortcut icon" href={favicon} />
         {/* Theme meta */}
-        <meta name="theme-name" content="geeky-nextjs" />
+        <meta name="theme-name" content="kiswahili-EastAfrica" />
         <meta name="msapplication-TileColor" content="#000000" />
         <meta
           name="theme-color"
