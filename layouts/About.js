@@ -28,7 +28,7 @@ const About = ({ data }) => {
           <MDXRemote {...mdxContent} components={shortcodes} />
         </div>
 
-        <div className="row mt-24 text-left lg:flex-nowrap">
+      {/*  <div className="row mt-24 text-left lg:flex-nowrap">
           <div className="lg:col-6 ">
             <div className="rounded border border-border p-6 dark:border-darkmode-border ">
               {markdownify(education.title, "h2", "mb-6")}
@@ -42,7 +42,7 @@ const About = ({ data }) => {
                   </div>
                 ))}
               </div>
-            </div>
+                </div> 
           </div>
           <div className="experience mt-10 lg:mt-0 lg:col-6">
             <div className="rounded border border-border p-6 dark:border-darkmode-border ">
@@ -59,7 +59,7 @@ const About = ({ data }) => {
               </ul>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

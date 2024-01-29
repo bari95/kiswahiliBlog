@@ -3,34 +3,17 @@ title: About Us
 image: /images/eastLogo5.png
 description: "meta description"
 layout: about
-education:
-  title: Formal Education
-  degrees:
-    - university: "Southeast University"
-      content: "1985 • 1991 • gravida nibh velvelit auctor alimo quet menean solli"
-    - university: "Northeast University"
-      content: "1985 • 1991 • gravida nibh velvelit auctor alimo quet menean solli"
-    - university: "Easteast University"
-      content: "1985 • 1991 • gravida nibh velvelit auctor alimo quet menean solli"
-    - university: "Southeast University"
-      content: "1985 • 1991 • gravida nibh velvelit auctor alimo quet menean solli"  
-
-experience:
-  title: Work Experience
-  list:
-    - Best Writer Award
-    - Best New Newel
-    - Best Book
-    - Best Article
-    - Best New Newel
-    - Best New Newel
-    - Best Book
-    - Best Article
-    - Best New Newel
-    - Best Book
-
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi amet, ultrices scelerisue cras. Tincidunt hendrerit egestas venenatis risus sit nunc. Est esglit non in ipsum lect;aaus adipiscing et enim porttitor. Dui ultrices et volud eetpat nunc, turpis rutrum elit vestibululm ipsum. Arcu fringilla duis vitae mos dsdllis duicras interdum purus cursus massa metus. Acc umsan felaais, egsdvet nisi, viverra turpis fermentum sit suspf bafedfb ndisse fermentum consectetur. Facilisis feugiat trisique orci tempor sed masd fbsssa tristique ultrices sodales. Augue est sapien elementum facilisis. Enim tincidnt cras interdum purus ndisse. morbi quis nunc.
+Kiswahili East Africa is a special online platform for people or tourists who loves
+learning Swahili/Kiswahili and who loves learning African culture in general. This AppIt’s helpful and very ideal for all those who visit especially to Tanzania, Zanzibar, Kenya, Uganda, Congo, Burundi, Rwanda as well as Africa in generally. Although This App called Kiswahili East Africa, it does not mean that it is for Africans
+only. It is an App for all people. I mean those who love the Swahili language. 
 
-Et dolor placerat tempus risus nunc urna, nunc a. Mattis viverra ut sapidaaen enim sed tortor. Mattis gravida fusce cras interdum purus cursus massa metus. Acc umsan felaais, eget nisi, viverra turpis fermentum sit suspf bafedfb ndisse. morbi quis nunc, at arcu quam facilisi. In in lacus aliquam dictum sagittis morbi odio. Et magnis cursus sem sed condimentum. Nibh non potenti ac amsdfet Tincidunt hendrerit egestas venenatis risus sit nunc. Est esglit non in ipsuasdm lect;aaus adipiscing et enim porttitor. Dui ultrices et volud eetpat nunc, turpis ndisse. morbi quis nunc, at arcu quam facilisi ndisse. morbi quis nunc, at arcu quam facilisi
+### SHORT STORY ABOUT KISWAHILI
+
+Swahili, also known by its native name Kiswahili, is a Bantu language and the nativelanguage of the Swahili people. It is one of two official languages (the other being
+English) of the East African Community (EAC) countries, namely Burundi, DemocraticRepublic of Congo, Kenya, Rwanda, South Sudan, Tanzania, and Uganda. It is a linguafranca of other areas in the African Great Lakes region and East and Southern Africa,
+including some parts of the Democratic Republic of the
+Congo (DRC), Malawi, Mozambique, the southern tip of Somalia, and Zambia. Swahili
+is also one of the working languages of the African Union and of the Southern AfricanDevelopment Community. The number of Swahili speakers, be they native or
+second-language speakers, is estimated to be more than 200 million.
