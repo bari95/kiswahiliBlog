@@ -7,6 +7,8 @@ import { useRouter } from "next/router";
 
 const Base = ({
   title,
+
+
   meta_title,
   description,
   image,
