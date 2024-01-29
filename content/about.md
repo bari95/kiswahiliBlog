@@ -1,6 +1,6 @@
 ---
 title: About Us
-image: /images/eastLogo5.png
+image: /images/Maasai_woman.jpg
 description: "meta description"
 layout: about
 ---
