@@ -13,7 +13,7 @@ banner:
 
 featured_posts:
   enable: true
-  title: Featured Posts
+  title: Featured Lessons
 
 promotion:
   enable: true
@@ -21,7 +21,7 @@ promotion:
   link: "#"
 
 recent_posts:
-  title: Recent Posts
+  title: Recent Lessons
   enable: true
 
 ---

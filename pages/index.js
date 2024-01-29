@@ -54,7 +54,9 @@ const Home = ({
                 
               </div>
               {markdownify(banner.content, "p", "mt-4")}
-              {banner.button.enable && (
+              
+              {/*
+              banner.button.enable && (
                   <Link
                     className="btn btn-primary mt-6"
                     href={banner.button.link}
@@ -63,7 +65,7 @@ const Home = ({
                     
                     {banner.button.label}
                   </Link>
-              )}
+              ) */}
             </div>
             {banner.image_enable && (
                 <div className="col-9 lg:col-6">

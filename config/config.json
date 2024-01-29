@@ -37,12 +37,12 @@
     },
     "featured_posts": {
       "enable": true,
-      "title": "Blog Categories",
+      "title": "Lessons' Categories",
       "showPost": 10
     },
     "categories": {
       "enable": true,
-      "title": "Blog Categories"
+      "title": "Lesson' Categories"
     },
     "newsletter": {
       "enable": true,
