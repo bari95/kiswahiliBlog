@@ -106,7 +106,7 @@ const PostSingle = ({
                 {disqus.enable && (
                   <DiscussionEmbed
                     key={theme}
-                    shortname={disqus.shortname}
+                    shortname={"kiswahili"}
                     config={disqusConfig}
                   />
                 )}

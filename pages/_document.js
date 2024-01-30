@@ -1,7 +1,7 @@
 import TwSizeIndicator from "@components/TwSizeIndicator";
 import config from "@config/config.json";
 import { Head, Html, Main, NextScript } from "next/document";
-
+import {Analytics} from "@vercel/analytics/react";
 
 const Document = () => {
   // Destructuring items from config object
@@ -75,7 +75,7 @@ const Document = () => {
       </Head>
       <body>
         <Main />
-        
+        <Analytics />
         <TwSizeIndicator />
         <NextScript />
 

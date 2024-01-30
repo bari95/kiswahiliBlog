@@ -1,12 +1,52 @@
-import { markdownify } from "@lib/utils/textConverter";
-import Link from "next/link";
-import { BsArrowRightShort } from "react-icons/bs";
-import { FaEnvelope, FaMapMarkerAlt, FaUserAlt } from "react-icons/fa";
-import ImageFallback from "./components/ImageFallback";
+import React, { useState } from 'react';
+import { IoCloseCircleOutline } from 'react-icons/io5';
+import { BsArrowRightShort } from 'react-icons/bs';
+import { FaEnvelope, FaMapMarkerAlt, FaUserAlt } from 'react-icons/fa';
+import ImageFallback from './components/ImageFallback';
+import Link from 'next/link';
+import sendEmail from '../api/sendEmail';
 
 const Contact = ({ data }) => {
   const { frontmatter } = data;
   const { title, form_action, phone, mail, location } = frontmatter;
+  const [form, setForm] = useState({
+    name: '',
+
+    email: '',
+    subject: '',
+    message: '',
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setForm((prevForm) => ({
+      ...prevForm,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch('/api/sendEmail', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(form),
+      });
+
+      if (response.ok) {
+        console.log('Form Submitted:', form);
+        // You can also add logic to reset the form or show a success message
+      } else {
+        console.error('Failed to submit form');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+    }
+  };
 
   return (
     <section className="section lg:mt-16">
@@ -14,17 +54,15 @@ const Contact = ({ data }) => {
         <div className="row relative pb-16">
           <ImageFallback
             className="-z-[1] object-cover object-top"
-            src={"/images/map.svg"}
+            src={'/images/map.svg'}
             fill="true"
             alt="map bg"
             priority={true}
           />
           <div className="lg:col-6">
-            {markdownify(
-              title,
-              "h1",
-              "h1 my-10 lg:my-11 lg:pt-11 text-center lg:text-left lg:text-[64px]"
-            )}
+            <h1 className="text-4xl font-bold my-10 lg:my-11 lg:pt-11 text-center lg:text-left lg:text-[64px]">
+              {title}
+            </h1>
           </div>
           <div className="contact-form-wrapper rounded border border-border p-6 dark:border-darkmode-border lg:col-6">
             <h2>
@@ -34,17 +72,11 @@ const Contact = ({ data }) => {
                 <BsArrowRightShort />
               </span>
             </h2>
-            <form
-              className="contact-form mt-12"
-              method="POST"
-              action={form_action}
-            >
+            <form className="contact-form mt-12" onSubmit={handleSubmit}>
               <div className="mb-6">
                 <label className="mb-2 block font-secondary" htmlFor="name">
                   Full name
-                  <small className="font-secondary text-sm text-primary">
-                    *
-                  </small>
+                  <small className="font-secondary text-sm text-primary">*</small>
                 </label>
                 <input
                   className="form-input w-full"
@@ -52,14 +84,14 @@ const Contact = ({ data }) => {
                   type="text"
                   placeholder="Bari Kaneno"
                   required
+                  value={form.name}
+                  onChange={handleInputChange}
                 />
               </div>
               <div className="mb-6">
                 <label className="mb-2 block font-secondary" htmlFor="email">
                   Email Address
-                  <small className="font-secondary text-sm text-primary">
-                    *
-                  </small>
+                  <small className="font-secondary text-sm text-primary">*</small>
                 </label>
                 <input
                   className="form-input w-full"
@@ -67,14 +99,14 @@ const Contact = ({ data }) => {
                   type="email"
                   placeholder="example@gmail.com"
                   required
+                  value={form.email}
+                  onChange={handleInputChange}
                 />
               </div>
               <div className="mb-6">
                 <label className="mb-2 block font-secondary" htmlFor="subject">
                   Subject
-                  <small className="font-secondary text-sm text-primary">
-                    *
-                  </small>
+                  <small className="font-secondary text-sm text-primary">*</small>
                 </label>
                 <input
                   className="form-input w-full"
@@ -82,26 +114,32 @@ const Contact = ({ data }) => {
                   type="text"
                   placeholder="advertisement"
                   required
+                  value={form.subject}
+                  onChange={handleInputChange}
                 />
               </div>
               <div className="mb-6">
                 <label className="mb-2 block font-secondary" htmlFor="message">
                   Your Message Here
-                  <small className="font-secondary text-sm text-primary">
-                    *
-                  </small>
+                  <small className="font-secondary text-sm text-primary">*</small>
                 </label>
                 <textarea
                   className="form-textarea w-full"
                   placeholder="Hello I’m Mr ‘x’ from………….."
                   rows="7"
+                  name="message"
+                  required
+                  value={form.message}
+                  onChange={handleInputChange}
                 />
               </div>
-              <input
-                className="btn btn-primary"
-                type="submit"
-                value="Send Now"
-              />
+              <div className="mb-6">
+                <input
+                  className="btn btn-primary w-full"
+                  type="submit"
+                  value="Send Now"
+                />
+              </div>
             </form>
           </div>
         </div>
@@ -110,8 +148,7 @@ const Contact = ({ data }) => {
             <div className="md:col-6 lg:col-4">
               <Link
                 href={`tel:${phone}`}
-                className="my-4 flex h-[100px] items-center justify-center
-             rounded border border-border p-4 text-primary dark:border-darkmode-border"
+                className="my-4 flex h-[100px] items-center justify-center rounded border border-border p-4 text-primary dark:border-darkmode-border"
               >
                 <FaUserAlt />
                 <p className="ml-1.5 text-lg font-bold text-dark dark:text-darkmode-light">
@@ -124,8 +161,7 @@ const Contact = ({ data }) => {
             <div className="md:col-6 lg:col-4">
               <Link
                 href={`mailto:${mail}`}
-                className="my-4 flex h-[100px] items-center justify-center
-             rounded border border-border p-4 text-primary dark:border-darkmode-border"
+                className="my-4 flex h-[100px] items-center justify-center rounded border border-border p-4 text-primary dark:border-darkmode-border"
               >
                 <FaEnvelope />
                 <p className="ml-1.5 text-lg font-bold text-dark dark:text-darkmode-light">
@@ -137,8 +173,7 @@ const Contact = ({ data }) => {
           {location && (
             <div className="md:col-6 lg:col-4">
               <span
-                className="my-4 flex h-[100px] items-center justify-center
-             rounded border border-border p-4 text-primary dark:border-darkmode-border"
+                className="my-4 flex h-[100px] items-center justify-center rounded border border-border p-4 text-primary dark:border-darkmode-border"
               >
                 <FaMapMarkerAlt />
                 <p className="ml-1.5 text-lg font-bold text-dark dark:text-darkmode-light">
