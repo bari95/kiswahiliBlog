@@ -1,7 +1,7 @@
 ---
 title: "Questioning 1"
 date: 2024-01-30T05:00:00Z
-image: /images/post/questioning/questioning1/HalimaJuma.jpg
+image: /images/post/questioning/questioning1/HalimaJuma3.jpg
 categories: ["Questioning"]
 featured: true
 author: Bari Kaneno
@@ -33,7 +33,7 @@ In Kiswahili, the art of questioning involves a set of key interrogative words t
 | 2   | Why you go out this late night ?- Kwanini unatoka usiku namna hii ?  <Audio src="/audios/questioning/questioning1/jumaUsikuNamnaHii.mpeg" />  | This is a time for going to wedding hall- Huu ndio muda wa kwenda ukumbini  <Audio src="/audios/questioning/questioning1/huuNdioMudaWaKwendaUkumbini.mpeg" /> | 
 | 3   | What ? repeat- Nini? rudia  <Audio src="/audios/questioning/questioning1/niniRudia.mpeg" /> | Very often you go out, I never ask you nor stop you- Kila mara huwa unatoka nje na sikuulizi wala kukuzuia   <Audio src="/audios/questioning/questioning1/kilaMaraHuwaUnatokaWalaSikuzuii.mpeg" />  | 
 | 4 When did I go out this late just to watch football ? | Lini nilitoka kuangalia mpira usiku namna hii ?<Audio src="/audios/questioning/questioning1/liniNilitokaUsikuNamnaHii.mpeg" />  | You normally go to watch football at time this - Wewe huwa unakwenda kuangalia mpira muda kama huu <Audio src="/audios/questioning/questioning1/mudaKamaHuu.mpeg" />  | 
-| 5   | How many times have I warned you about this habit Halima ?- Mara nimekuzuia kuhusu hii tabia Halima ? <Audio src="/audios/questioning/questioning1/maraNgapi.mpeg" />  | The problem is you dont care about me!- Tatizo lako hunijali <Audio src="/audios/questioning/questioning1/tatizoLakoHunijali.mpeg" />  | 
+| 5   | How many times have I warned you about this habit Halima ?- Mara ngapi nimekuzuia kuhusu hii tabia Halima ? <Audio src="/audios/questioning/questioning1/maraNgapi.mpeg" />  | The problem is you dont care about me!- Tatizo lako hunijali <Audio src="/audios/questioning/questioning1/tatizoLakoHunijali.mpeg" />  | 
 
 ---
 

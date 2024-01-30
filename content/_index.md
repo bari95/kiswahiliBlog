@@ -1,8 +1,8 @@
 ---
 banner:
-  title: Shukrani
+  title: Sikukuu
   title_small: "word of the day"
-  content: Shukrani means 'thank you'
+  content: Sikukuu means 'Holiday'
   image_enable: true
   image: /images/kiswahiliHomePhoto.png
   button:
