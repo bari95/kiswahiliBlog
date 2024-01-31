@@ -35,7 +35,7 @@ const Home = ({
     <Base>
       {/* Banner */}
       
-      {/*   <section className="section banner relative pb-0 pt-0 mt-4">
+       <section className="section banner relative pb-0 pt-0 mt-4">
  <ImageFallback
           className="absolute bottom-0 left-0 z-[-1] w-full"
           src={"/images/banner-bg-shape.svg"}
@@ -81,7 +81,7 @@ const Home = ({
             )}
           </div>
         </div>
-      </section> */}
+      </section> 
 
       {/* Home main */}
       <section className="section mt-0">
