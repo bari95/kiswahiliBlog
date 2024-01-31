@@ -35,7 +35,7 @@ const Home = ({
     <Base>
       {/* Banner */}
       
-      <section className="section banner relative pb-0">
+      <section className="section banner relative pb-0 pt-0 mt-4">
   {/*  <ImageFallback
           className="absolute bottom-0 left-0 z-[-1] w-full"
           src={"/images/banner-bg-shape.svg"}
@@ -45,7 +45,7 @@ const Home = ({
           priority
         />
 */}
-        <div className="container">
+        <div className="container mt-4">
           <div className="row flex-wrap-reverse items-center justify-center lg:flex-row">
             <div className={banner.image_enable ? "mt-12 text-center lg:mt-0 lg:text-left lg:col-6" : "mt-12 text-center lg:mt-0 lg:text-left lg:col-12"}>
               <div className="banner-title">
