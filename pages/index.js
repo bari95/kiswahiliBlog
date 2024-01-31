@@ -53,7 +53,7 @@ const Home = ({
                 {markdownify(banner.title_small, "strong")}
                 
               </div>
-              {markdownify(banner.content, "p", "mt-4")}
+              {markdownify(banner.content, "p", "mt-1")}
               
             
               banner.button.enable && (
@@ -91,7 +91,7 @@ const Home = ({
             <div className="mb-6 lg:mb-0 lg:col-8">
               {/* Featured posts */}
               {featured_posts.enable && (
-                <div className="section">
+                <div className="section mt-3">
                   {markdownify(featured_posts.title, "h3")}
                   <div className="rounded border border-border p-6 dark:border-darkmode-border">
                     <div className="row">
