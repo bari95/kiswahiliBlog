@@ -49,7 +49,7 @@ const Home = ({
           <div className="row flex-wrap-reverse items-center justify-center lg:flex-row">
             <div className={banner.image_enable ? "mt-4 text-center lg:mt-0 lg:text-left lg:col-6" : "mt-4 text-center lg:mt-0 lg:text-left lg:col-12"}>
               <div className="banner-title">
-                {markdownify(banner.title, "strong")}
+                {markdownify(banner.title, "h4")}
                 {markdownify(banner.title_small, "strong")}
                 
               </div>
@@ -84,7 +84,7 @@ const Home = ({
       </section>
 
       {/* Home main */}
-      <section className="section">
+      <section className="section mt-0">
       
         <div className="container mt-0">
           <div className="row items-start">
