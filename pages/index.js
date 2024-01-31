@@ -45,7 +45,7 @@ const Home = ({
           priority
         />
 
-        <div className="container mt-4">
+        <div className="container mt-8">
           <div className="row flex-wrap-reverse items-center justify-center lg:flex-row">
             <div className={banner.image_enable ? "mt-4 text-center lg:mt-4 lg:text-left lg:col-6" : "mt-4 text-center lg:mt-4 lg:text-left lg:col-12"}>
               <div className="banner-title">
@@ -84,7 +84,7 @@ const Home = ({
       </section> 
 
       {/* Home main */}
-      <section className="section mt-0 pt-4">
+      <section className="section mt-8 pt-4">
       
         <div className="container mt-0">
           <div className="row items-start">
