@@ -2,8 +2,8 @@
 banner:
   title: Sikukuu
   title_small: "word of the day"
-  content: Sikukuu means 'Holiday'
-  image_enable: true
+  content: Sikukuu means 'Holiday/Festival'
+  image_enable: false
   image: /images/kiswahiliHomePhoto.png
   button:
     enable: true
