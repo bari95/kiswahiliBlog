@@ -6,7 +6,7 @@ banner:
   image_enable: false
   image: /images/kiswahiliHomePhoto.png
   button:
-    enable: true
+    enable: false
     label: See more
     link: /about
     rel: ""
@@ -16,7 +16,7 @@ featured_posts:
   title: Featured Lessons
 
 promotion:
-  enable: true
+  enable: false
   image: /images/promotion.png
   link: "#"
 
