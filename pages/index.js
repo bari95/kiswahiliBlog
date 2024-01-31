@@ -50,7 +50,7 @@ const Home = ({
             <div className={banner.image_enable ? "mt-4 text-center lg:mt-0 lg:text-left lg:col-6" : "mt-4 text-center lg:mt-0 lg:text-left lg:col-12"}>
               <div className="banner-title">
                 {markdownify(banner.title, "strong")}
-                {markdownify(banner.title_small, "span")}
+                {markdownify(banner.title_small, "strong")}
                 
               </div>
               {markdownify(banner.content, "p", "mt-4")}
@@ -86,7 +86,7 @@ const Home = ({
       {/* Home main */}
       <section className="section">
       
-        <div className="container">
+        <div className="container mt-0">
           <div className="row items-start">
             <div className="mb-6 lg:mb-0 lg:col-8">
               {/* Featured posts */}
