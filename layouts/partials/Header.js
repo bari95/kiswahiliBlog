@@ -30,11 +30,7 @@ const Header = () => {
   }, [showMenu]);
 
   return (
-    <header className="header" style={{
-        backgroundImage: `url('/images/maasai_woman.jpg')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}>
+    <header className="header pt-4 pb-4" >
       <nav className="navbar container px-1 sm:px-8">
         <div className="order-0">
           <Logo />
