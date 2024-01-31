@@ -36,7 +36,7 @@ const Home = ({
       {/* Banner */}
       
       <section className="section banner relative pb-0">
-        <ImageFallback
+  {/*  <ImageFallback
           className="absolute bottom-0 left-0 z-[-1] w-full"
           src={"/images/banner-bg-shape.svg"}
           width={1905}
@@ -44,12 +44,12 @@ const Home = ({
           alt="banner-shape"
           priority
         />
-
+*/}
         <div className="container">
           <div className="row flex-wrap-reverse items-center justify-center lg:flex-row">
             <div className={banner.image_enable ? "mt-12 text-center lg:mt-0 lg:text-left lg:col-6" : "mt-12 text-center lg:mt-0 lg:text-left lg:col-12"}>
               <div className="banner-title">
-                {markdownify(banner.title, "h1")}
+                {markdownify(banner.title, "h3")}
                 {markdownify(banner.title_small, "span")}
                 
               </div>
