@@ -7,7 +7,7 @@ featured: true
 author: Mandella Palla
 draft: false
 ---
-
+Embark on a journey through Swahili action verbs with these essential commands:
 
 Go- **Nenda**
 
