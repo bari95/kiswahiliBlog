@@ -77,7 +77,7 @@ const Document = () => {
         <Main />
         <Analytics />
         <TwSizeIndicator />
-        <NextScript />
+        
 
         {/* Google Translate container */}
         <div id="google_translate_element" style={{display:'none'}} className="border p-4">
@@ -86,7 +86,7 @@ const Document = () => {
         </div>
 
         {/* Google Translate initialization script */}
-        <script dangerouslySetInnerHTML={{ __html: `
+        <NextScript dangerouslySetInnerHTML={{ __html: `
           function loadGoogleTranslate() {
             new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
           }

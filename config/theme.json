@@ -19,8 +19,8 @@
         "primary": "#059669",
         "body": "#111",
         "border": "#636363",
-        "theme_light": "#f4f7f7",
-        "theme_dark": "#383848"
+        "theme_light": " #383848",
+        "theme_dark": "#f4f7f7" 
       },
       "text_color": {
         "default": "#a4a4a4",

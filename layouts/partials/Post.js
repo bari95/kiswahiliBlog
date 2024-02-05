@@ -20,7 +20,7 @@ const Post = ({ post }) => {
             height={208}
           />
         )}
-        <ul className="absolute top-3 left-2 flex flex-wrap items-center">
+      {/*  <ul className="absolute top-3 left-2 flex flex-wrap items-center">
           {post.frontmatter.categories.map((tag, index) => (
             <li
               className="mx-2 inline-flex h-7 rounded-[35px] bg-blue-500 bg-opacity-40 px-3 text-white"
@@ -34,7 +34,7 @@ const Post = ({ post }) => {
               </Link>
             </li>
           ))}
-        </ul>
+          </ul> */}
       </div>
       <h3 className="h5 mb-2 mt-4">
         <Link
@@ -43,16 +43,16 @@ const Post = ({ post }) => {
         >
           {post.frontmatter.title}
         </Link>
-      </h3>
+          </h3> 
       <ul className="flex items-center space-x-4">
         <li>
-          <Link
+          <span
             className="inline-flex items-center font-secondary text-xs leading-3"
             href="/about"
           >
             <FaUserAlt className="mr-1.5" />
             {author}
-          </Link>
+          </span>
         </li>
         <li className="inline-flex items-center font-secondary text-xs leading-3">
         {/*  <FaRegCalendar className="mr-1.5" /> */}
@@ -62,7 +62,7 @@ const Post = ({ post }) => {
       
         </li>
       </ul>
-      <p>{post.content.slice(0, Number(summary_length))}</p>
+      <p>...{post.content.slice(100, Number(summary_length))}...</p>
       <Link
         className="btn btn-outline-primary mt-4"
         href={`/${blog_folder}/${post.slug}`}

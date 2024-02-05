@@ -1,6 +1,5 @@
 
 
-
 import config from "@config/config.json";
 import Base from "@layouts/Baseof";
 import InnerPagination from "@layouts/components/InnerPagination";
@@ -38,6 +37,8 @@ const PostSingle = ({
     ? frontmatter.disqusId
     : config.settings.blog_folder + "/" + slug;
 
+    console.log("post single is openned");
+
   return (
     <Base title={title} description={description}>
       <section className="section single-blog mt-6 ">
@@ -58,7 +59,7 @@ const PostSingle = ({
                     />
                     </div>
                   )}
-                  <ul className="absolute top-3 left-2 flex flex-wrap items-center">
+                {/*  <ul className="absolute top-3 left-2 flex flex-wrap items-center">
                     {categories.map((tag, index) => (
                       <li
                         className="mx-2 inline-flex h-7 rounded-[35px] bg-blue-500 bg-opacity-40 px-3 text-white"
@@ -72,7 +73,7 @@ const PostSingle = ({
                         </Link>
                       </li>
                     ))}
-                  </ul>
+                    </ul> */}
                 </div>
                 {config.settings.InnerPaginationOptions.enableTop && (
                   <div className="mt-4">

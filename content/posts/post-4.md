@@ -7,11 +7,12 @@ featured: true
 author: Mandella Palla
 draft: false
 ---
-
+<Accordion title="Meaning">
 In the heart of Kiswahili, "nakupenda" holds the magic of love. Imagine it like a melody, a simple yet powerful tune that means "I love you." Those three little words become a dance on the tongue, a joyful promise wrapped in warmth.
+</Accordion>
 
-###  | In Practice
 
+<Accordion title="Check Practice">
 | #   |    John     |     Jane     |  
 | :-- | :----------: | :----------: | 
 | 1   | I love you Jane!- Nakupenda Jane! <Audio src="/audios/conversations/NakupendaJane.mp3" /> | No!- Hapana <Audio src="/audios/conversations/Hapana.mp3" /> | 
@@ -22,6 +23,6 @@ In the heart of Kiswahili, "nakupenda" holds the magic of love. Imagine it like 
 
 ---
 
-
+</Accordion>
 
 

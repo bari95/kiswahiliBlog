@@ -2,7 +2,7 @@
   "site": {
     "title": "Kiswahili East Afrika",
     "base_url": "/",
-    "favicon": "/images/favicon.png",
+    "favicon": "/images/eastLogo5.png",
     "logo": "/images/eastLogo5.png",
     "logo_white": "/images/whiteLogo2.png",
     "logo_width": "100",
@@ -23,10 +23,10 @@
   "params": {
     "tag_manager_id": "",
     "footer_content": "Kiswahili East Africa is an education platforrm dedicated to learners of Kiswahili language from all over the world with different backgrounds; begginers, intermidiate and advanced! Welcome",
-    "copyright": ""
+    "copyright": "2024 Kiswahili East Africa"
   },
   "metadata" : {
-    "meta_author": "Anonymous",
+    "meta_author": "Bari Kaneno",
     "meta_image": "/images/whiteLogo2.png",
     "meta_description": "kiswahili"
   },
@@ -37,12 +37,12 @@
     },
     "featured_posts": {
       "enable": true,
-      "title": "Lessons' Categories",
+      "title": "Kiswahili lessons",
       "showPost": 10
     },
     "categories": {
       "enable": true,
-      "title": "Lesson' Categories"
+      "title": "Lessons' Categories"
     },
     "newsletter": {
       "enable": true,

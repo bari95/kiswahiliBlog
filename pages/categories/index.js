@@ -5,6 +5,7 @@ import { humanize, markdownify } from "@lib/utils/textConverter";
 import Link from "next/link";
 const { blog_folder } = config.settings;
 import { getSinglePage } from "@lib/contentParser";
+
 import { FaFolder } from "react-icons/fa";
 import { slugify } from "@lib/utils/textConverter";
 
