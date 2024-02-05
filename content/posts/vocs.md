@@ -9,10 +9,10 @@ draft: false
 ---
 
 
-Hello- Jambo
+Hello- **Jambo**
 
-Welcome- Karibu
+Welcome- **Karibu**
 
-Friend- Rafiki
+Friend- **Rafiki**
 
-I love you- Nakupenda
+I love you- **Nakupenda**

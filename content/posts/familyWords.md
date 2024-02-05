@@ -8,26 +8,28 @@ author: Mandella Palla
 draft: false
 ---
 
-Parent- Mzazi
+Parent - **Mzazi** <Audio src="/audios/vocs/family&school/mzazi.mp3" />
 
-Parents- Wazazi
 
-Child- Mtoto
 
-Children- Watoto
+Parents - **Wazazi** <Audio src="/audios/vocs/family&school/wazazi.mp3" />
 
-Care- Kujali
+Child - **Mtoto** <Audio src="/audios/vocs/family&school/mtoto.mp3" />
 
-Love- Upendo
+Children - **Watoto** <Audio src="/audios/vocs/family&school/watoto.mp3" />
 
-Student- Mwanafunzi
+Care - **Kujali** <Audio src="/audios/vocs/family&school/kujali.mp3" />
 
-School- Shule
+Love - **Upendo** <Audio src="/audios/vocs/family&school/upendo.mp3" />
 
-Education- Elimu
+Student - **Mwanafunzi** <Audio src="/audios/vocs/family&school/mwanafunzi.mp3" />
 
-Uniform- Sare
+School - **Shule** <Audio src="/audios/vocs/family&school/shule.mp3" />
 
-Shoe- Kiatu
+Education - **Elimu** <Audio src="/audios/vocs/family&school/elimu.mp3" />
 
-Shoes- Viatu
+Uniform - **Sare** <Audio src="/audios/vocs/family&school/sare.mp3" />
+
+Shoe - **Kiatu**  <Audio src="/audios/vocs/family&school/kiatu.mp3" />
+
+Shoes - **Viatu** <Audio src="/audios/vocs/family&school/viatu.mp3" />

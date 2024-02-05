@@ -8,19 +8,19 @@ author: Mandella Palla
 draft: false
 ---
 
-There is one person- Kuna mtu mmoja
+There is one person- **Kuna mtu mmoja**
 
-There are two people- Kuna watu wawili
+There are two people- **Kuna watu wawili**
 
-There is one thing- Kuna kitu kimoja
+There is one thing- **Kuna kitu kimoja**
 
-There are two things- Kuna vitu viwili
+There are two things- **Kuna vitu viwili**
 
-There is one car- Kuna gari Moja
+There is one car- **Kuna gari Moja**
 
-There are two cars- Kuna magari mawili
+There are two cars- **Kuna magari mawili**
 
-*There is/ There are- Kuna 
+*There is/ There are- **Kuna**
 
 
 

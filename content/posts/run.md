@@ -9,16 +9,16 @@ draft: false
 ---
 
 
-Go- Nenda
+Go- **Nenda**
 
-Run away- Kimbia
+Run away- **Kimbia**
 
-Take a walk- Tembea
+Take a walk- **Tembea**
 
-Go back- Rudi
+Go back- **Rudi**
 
-Stand up- Simama
+Stand up- **Simama**
 
-Stop it- Acha
+Stop it- **Acha**
 
-Get out- Ondoka
+Get out- **Ondoka**
