@@ -8,6 +8,14 @@ author: Mandella Palla
 draft: false
 ---
 
+In this lesson, we explore concise Swahili inquiries for various situations:
+
+- **What are you doing?** *Unafanya nini?*
+- **What do you want?** *Unataka nini?*
+- **What do you think?** *Unafikiria nini?*
+- **What do you have?** *Una nini?*
+
+Each question is accompanied by an audio component for correct pronunciation, making it easier to grasp these essential conversational phrases in Swahili. Let's delve into the art of asking questions in this expressive language.
 
 -What are you doing?-  **Unafanya nini?** <Audio src="/audios/questioning/shortQuestions/unafanyaNini.mp3" /> 
 
