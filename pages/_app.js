@@ -55,9 +55,7 @@ const App = ({ Component, pageProps }) => {
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=5"
         />
-        <meta name="description" content="Learn Kiswahili online with our comprehensive language lessons and resources. Explore swahili culture and start your language journey"/>
-        <meta name="keywords" content="Learn Kiswahili, Swahili language, Kiswahili lessons, Kiswahili culture, Kiswahili for Beginners" />
-        <meta name="author" content="Bari Kaneno" />
+        
       </Head>
       <ThemeProvider attribute="class" defaultTheme={default_theme}>
         <Component {...pageProps} />

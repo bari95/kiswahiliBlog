@@ -101,7 +101,7 @@ const Home = ({
                       </div>
                       <div className="scrollbar-w-[10px] mt-4 max-h-[480px] scrollbar-thin scrollbar-track-gray-100 scrollbar-thumb-border dark:scrollbar-track-gray-800 dark:scrollbar-thumb-darkmode-theme-dark md:mt-0 md:col-6">
                         {featuredPosts
-                          .slice(1, featuredPosts.length)
+                          .slice(1,3)
                           .map((post, i, arr) => (
                             <div
                               className={`mb-6 flex items-center pb-6 ${
