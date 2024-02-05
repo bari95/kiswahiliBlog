@@ -1,6 +1,6 @@
 ---
 title: "Nakupenda ?"
-date: 2024-02-06T04:00:00Z
+date: 2024-02-05T04:00:00Z
 image: /images/post/janeJohn.jpeg
 categories: ["dialogue"]
 featured: true
