@@ -8,9 +8,9 @@ author: Mandella Palla
 draft: false
 ---
 
+In this lesson, we delve into fundamental Swahili vocabulary associated with family and school. From the concepts of parenting and caring for children to essential school-related terms, let's explore the richness of the Swahili language. Each term is accompanied by an audio component for accurate pronunciation, facilitating a comprehensive learning experience. Let's begin our linguistic journey with expressions of family and education in Swahili.
+
 Parent - **Mzazi** <Audio src="/audios/vocs/family&school/mzazi.mp3" />
-
-
 
 Parents - **Wazazi** <Audio src="/audios/vocs/family&school/wazazi.mp3" />
 
