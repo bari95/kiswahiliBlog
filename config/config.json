@@ -1,6 +1,6 @@
 {
   "site": {
-    "title": "Kiswahili East Afrika",
+    "title": "Learn Kiswahili Online: Beginner to Advanced Lessons | https://www.kiswahili.co.tz",
     "base_url": "/",
     "favicon": "/images/eastLogo5.png",
     "logo": "/images/eastLogo5.png",
@@ -27,13 +27,15 @@
   },
   "metadata" : {
     "meta_author": "Bari Kaneno",
-    "meta_image": "/images/whiteLogo2.png",
-    "meta_description": "kiswahili"
+    "meta_image": "/images/eastLogo5.png",
+    "default_page":"https://www.kiswahili.co.tz",
+    "og_description":"Explore our comprehensive online Kiswahili courses designed for beginners and advanced learners. Join us to learn Kiswahili in an immersive and interactive environment. Start your language journey today!",
+    "meta_description": "Explore our comprehensive online Kiswahili courses designed for beginners and advanced learners. Join us to learn Kiswahili in an immersive and interactive environment. Start your language journey today!" 
   },
   "widgets" : {
     "about": {
       "enable": true,
-      "content": "Kiswahili East Africa is an education platforrm dedicated to learners of Kiswahili language from all over the world with different backgrounds; begginers, intermidiate and advanced! Welcome"
+      "content": "Kiswahili East Africa is an education platforrm dedicated to learners of Kiswahili language from all over the world with different backgrounds; begginers, intermidiate and advanced! Welcome,Learn Kiswahili,online lessons"
     },
     "featured_posts": {
       "enable": true,
