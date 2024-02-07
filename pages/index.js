@@ -32,7 +32,7 @@ const Home = ({
 
 
   return (
-    <Base title={"Home"} meta_title={""} description={"learn swahili,swahili,kiswahili,Tanzania,Kenya,East Africa,culture"}>
+    <Base>
       {/* Banner */}
       
        <section className="section banner relative pb-0 pt-0 mt-4">
