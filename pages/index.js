@@ -2,6 +2,7 @@
 
 import config from "@config/config.json";
 import Base from "@layouts/Baseof";
+import { wordOfTheDay } from "content/wordOfTheDay/data";
 import ImageFallback from "@layouts/components/ImageFallback";
 import Pagination from "@layouts/components/Pagination";
 import Post from "@layouts/partials/Post";
@@ -9,11 +10,15 @@ import Sidebar from "@layouts/partials/Sidebar";
 import { getListPage, getSinglePage } from "@lib/contentParser";
 import { getTaxonomy } from "@lib/taxonomyParser";
 import dateFormat from "@lib/utils/dateFormat";
-import { sortByDate } from "@lib/utils/sortFunctions";
+import {sortByDate} from "@lib/utils/sortFunctions";
 import { markdownify } from "@lib/utils/textConverter";
 import Link from "next/link";
 import { FaRegCalendar } from "react-icons/fa";
+import TextSlider from "@layouts/components/TextSlider";
 const { blog_folder, pagination } = config.settings;
+
+
+
 
 const Home = ({
   banner,
@@ -24,6 +29,7 @@ const Home = ({
   promotion,
 }) => {
   // define state
+  
   const sortPostByDate = sortByDate(posts);
   const featuredPosts = sortPostByDate.filter(
     (post) => post.frontmatter.featured
@@ -34,9 +40,8 @@ const Home = ({
   return (
     <Base>
       {/* Banner */}
-      
        <section className="section banner relative pb-0 pt-0 mt-4">
- <ImageFallback
+        <ImageFallback
           className="absolute bottom-0 left-0 z-[-1] w-full"
           src={"/images/banner-bg-shape.svg"}
           width={1905}
@@ -44,7 +49,7 @@ const Home = ({
           alt="banner-shape"
           priority
         />
-
+           <TextSlider wordOfTheDayArray={wordOfTheDay} />
         <div className="container mt-8">
           <div className="row flex-wrap-reverse items-center justify-center lg:flex-row">
             <div className={banner.image_enable ? "mt-4 text-center lg:mt-4 lg:text-left lg:col-6" : "mt-4 text-center lg:mt-4 lg:text-left lg:col-12"}>
