@@ -33,7 +33,7 @@ const NotFound = () => {
         maxWidth: '500px',
         color: '#666'
       }}>
-        Sorry, the page you are looking for doesn't exist or has been moved.
+        Sorry, the page you are looking for doesn&apos;t exist or has been moved.
       </p>
       
       <button
