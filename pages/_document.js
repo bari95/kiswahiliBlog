@@ -1,4 +1,4 @@
-import TwSizeIndicator from "@components/TwSizeIndicator";
+
 import config from "@config/config.json";
 import { Head, Html, Main, NextScript } from "next/document";
 import {Analytics} from "@vercel/analytics/react";
@@ -76,7 +76,7 @@ const Document = () => {
       <body>
         <Main />
         <Analytics />
-        <TwSizeIndicator />
+       
         
 
         {/* Google Translate container */}
