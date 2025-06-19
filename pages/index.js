@@ -15,7 +15,11 @@ import { markdownify } from "@lib/utils/textConverter";
 import Link from "next/link";
 import { FaRegCalendar } from "react-icons/fa";
 import TextSlider from "@layouts/components/TextSlider";
+import KiswahiliBlogComponent from "components/blog/main";
+
+
 const { blog_folder, pagination } = config.settings;
+
 
 
 
@@ -41,159 +45,14 @@ const Home = ({
     <Base>
       {/* Banner */}
        <section className="section banner relative pb-0 pt-0 mt-4">
-        <ImageFallback
-          className="absolute bottom-0 left-0 z-[-1] w-full"
-          src={"/images/banner-bg-shape.svg"}
-          width={1905}
-          height={295}
-          alt="banner-shape"
-          priority
-        />
-           <TextSlider wordOfTheDayArray={wordOfTheDay} />
-        <div className="container mt-8">
-          <div className="row flex-wrap-reverse items-center justify-center lg:flex-row">
-            <div className={banner.image_enable ? "mt-4 text-center lg:mt-4 lg:text-left lg:col-6" : "mt-4 text-center lg:mt-4 lg:text-left lg:col-12"}>
-              <div className="banner-title">
-                {markdownify(banner.title, "h4")}
-                {markdownify(banner.title_small, "strong")}
-                
-              </div>
-              {markdownify(banner.content, "p", "mt-1")}
-              
-            
-             { banner.button.enable && (
-                  <Link
-                    className="btn btn-primary mt-6"
-                    href={banner.button.link}
-                    rel={banner.button.rel}
-                  >
-                    
-                    {banner.button.label}
-                  </Link>
-              ) }
-            </div>
-            {banner.image_enable && (
-                <div className="col-9 lg:col-6">
-                  <ImageFallback
-                    className="mx-auto object-contain"
-                    src={banner.image}
-                    width={548}
-                    height={443}
-                    priority={true}
-                    alt="Banner Image"
-                  />
-                </div>
-            )}
-          </div>
-        </div>
+      
+
+        <KiswahiliBlogComponent />
+         
+     
       </section> 
 
-      {/* Home main */}
-      <section className="section mt-8 pt-4">
-      
-        <div className="container mt-0">
-          <div className="row items-start">
-            <div className="mb-6 lg:mb-0 lg:col-8">
-              {/* Featured posts */}
-              {featured_posts.enable && (
-                <div className="section mt-0 pt-0">
-                  {markdownify(featured_posts.title, "h3")}
-                  <div className="rounded border border-border p-6 dark:border-darkmode-border">
-                    <div className="row">
-                      <div className="md:col-6">
-                        <Post post={featuredPosts[0]} />
-                      
-                      </div>
-                      <div className="scrollbar-w-[10px] mt-4 max-h-[480px] scrollbar-thin scrollbar-track-gray-100 scrollbar-thumb-border dark:scrollbar-track-gray-800 dark:scrollbar-thumb-darkmode-theme-dark md:mt-0 md:col-6">
-                        {featuredPosts
-                          .slice(1,3)
-                          .map((post, i, arr) => (
-                            <div
-                              className={`mb-6 flex items-center pb-6 ${
-                                i !== arr.length - 1 &&
-                                "border-b border-border dark:border-darkmode-border"
-                              }`}
-                              key={`key-${i}`}
-                            >
-                              {post.frontmatter.image && (
-                                <ImageFallback
-                                  className="mr-3 h-[85px] rounded object-cover"
-                                  src={post.frontmatter.image}
-                                  alt={post.frontmatter.title}
-                                  width={105}
-                                  height={85}
-                                />
-                              )}
-                              <div>
-                                <h3 className="h5 mb-2">
-                                  <Link
-                                    href={`/${blog_folder}/${post.slug}`}
-                                    className="block hover:text-primary"
-                                  >
-                                    {post.frontmatter.title}
-                                  </Link>
-                                </h3>
-                                <p className="inline-flex items-center font-bold">
-                                   {/* <FaRegCalendar className="mr-1.5" /> */} 
-                        {/*dateFormat(post.frontmatter.date)*/}
-                                 {
-                                  post.frontmatter.author === "" ? "anonymous" :
-                                 (post.frontmatter.author === undefined ? "anonymous" :post.frontmatter.author )
-                                 }
-                                </p>
-                              </div>
-                            </div>
-                          ))}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              )}
-
-              {/* Promotion 
-              {promotion.enable && (
-                <Link href={promotion.link} className="section block pt-0">
-                  <ImageFallback
-                    className="h-full w-full"
-                    height="115"
-                    width="800"
-                    src={promotion.image}
-                    alt="promotion"
-                  />
-                </Link>
-              )}
-              */}
-
-              {/* Recent Posts */}
-              {recent_posts.enable && (
-                <div className="section pt-0">
-                  {markdownify(recent_posts.title, "h3")}
-                  <div className="rounded border border-border px-6 pt-3 dark:border-darkmode-border">
-                    <div className="row">
-                      {sortPostByDate.slice(0, showPosts).map((post) => (
-                        <div className="mb-3 md:col-6" key={post.slug}>
-                          <Post post={post} />
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              )}
-
-              <Pagination
-                totalPages={Math.ceil(posts.length / showPosts)}
-                currentPage={1}
-              />
-            </div>
-            {/* sidebar */}
-            <Sidebar
-              className={"lg:mt-[3.5rem]"}
-              posts={posts}
-              categories={categories}
-            />
-          </div>
-        </div>
-      </section>
+   
     </Base>
   );
 };

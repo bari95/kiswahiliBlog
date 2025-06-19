@@ -2,43 +2,43 @@
   "colors": {
     "default": {
       "theme_color": {
-        "primary": "#1e88e5",
-        "body": "#fff",
-        "border": "#e1e1e1",
-        "theme_light": "#f2f2f2",
-        "theme_dark": "#1a202c"
+        "primary": "#C04000",
+        "body": "#FFF8F5",
+        "border": "#D4A574",
+        "theme_light": "#F5E6D3",
+        "theme_dark": "#2C1810"
       },
       "text_color": {
-        "default": "#555",
-        "dark": "#222",
-        "light": "#999"
+        "default": "#4A3426",
+        "dark": "#2C1810",
+        "light": "#8B6F47"
       }
     },
     "darkmode": {
       "theme_color": {
-        "primary": "#059669",
-        "body": "#111",
-        "border": "#636363",
-        "theme_light": " #383848",
-        "theme_dark": "#f4f7f7" 
+        "primary": "#E85A4F",
+        "body": "#1A0F0A",
+        "border": "#6B4423",
+        "theme_light": "#3D2817",
+        "theme_dark": "#F5E6D3"
       },
       "text_color": {
-        "default": "#a4a4a4",
-        "dark": "#ddd",
-        "light": "#fff"
+        "default": "#C4A484",
+        "dark": "#F5E6D3",
+        "light": "#E8D5C0"
       }
     }
   },
   "fonts": {
     "font_family": {
-      "primary": "Raleway:wght@400",
+      "primary": "Nunito:wght@400;600;700",
       "primary_type": "sans-serif",
-      "secondary": "Merriweather Sans:wght@400;700",
-      "secondary_type": "sans-serif"
+      "secondary": "Crimson Text:wght@400;600",
+      "secondary_type": "serif"
     },
     "font_size": {
       "base": "16",
-      "scale": "1.200"
+      "scale": "1.250"
     }
   }
 }
