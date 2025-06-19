@@ -51,12 +51,12 @@ const BlogPostCard = ({ post, isExpanded, onToggleExpand }) => {
   return (
     <article 
       key={`post-${post.id}`}
-      className="rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.02] bg-body border border-border dark:bg-theme-light dark:border-border" 
+      className="rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.02] bg-body border border-border" 
     >
       {/* Post Header */}
       <div className="p-6 border-b border-border">
         <div className="flex items-start justify-between mb-4">
-          <h2 className="text-2xl font-bold leading-tight text-dark dark:text-light font-primary">
+          <h2 className="text-2xl font-bold leading-tight text-text-dark font-primary">
             {post.title}
           </h2>
           <div className="flex items-center gap-3">
@@ -66,7 +66,7 @@ const BlogPostCard = ({ post, isExpanded, onToggleExpand }) => {
             />
             <button
               onClick={() => onToggleExpand(post.id)}
-              className="px-4 py-2 rounded-lg transition-colors duration-200 hover:opacity-80 bg-primary text-body"
+              className="px-4 py-2 rounded-lg transition-colors duration-200 hover:opacity-80 bg-primary text-body font-primary font-semibold"
             >
               {isExpanded ? 'Funga' : 'Soma'}
             </button>
@@ -78,11 +78,9 @@ const BlogPostCard = ({ post, isExpanded, onToggleExpand }) => {
 
       {/* Post Content */}
       <div className="p-6">
-      
-
         {/* Expanded Content */}
         {isExpanded && (
-          <div className="mt-6 p-6 rounded-xl bg-theme-light dark:bg-theme-dark">
+          <div className="mt-6 p-6 rounded-xl bg-theme-light">
             <style>{`
               .kiswahili-content {
                 line-height: 1.7;
@@ -130,7 +128,7 @@ const BlogPostCard = ({ post, isExpanded, onToggleExpand }) => {
             `}</style>
             <div className="prose prose-lg max-w-none">
               <div 
-                className="kiswahili-content text-dark dark:text-light [&_h1]:text-primary [&_h2]:text-primary [&_h3]:text-primary [&_h4]:text-primary [&_h5]:text-primary [&_h6]:text-primary [&_strong]:text-primary [&_blockquote]:border-primary [&_blockquote]:bg-body [&_code]:bg-theme-light [&_pre]:bg-theme-light dark:[&_blockquote]:bg-theme-light dark:[&_code]:bg-theme-dark dark:[&_pre]:bg-theme-dark"
+                className="kiswahili-content text-text-default font-secondary [&_h1]:text-primary [&_h2]:text-primary [&_h3]:text-primary [&_h4]:text-primary [&_h5]:text-primary [&_h6]:text-primary [&_h1]:font-primary [&_h2]:font-primary [&_h3]:font-primary [&_h4]:font-primary [&_h5]:font-primary [&_h6]:font-primary [&_strong]:text-primary [&_blockquote]:border-primary [&_blockquote]:bg-body [&_code]:bg-theme-light [&_pre]:bg-theme-light"
                 dangerouslySetInnerHTML={{ 
                   __html: sanitizeHtml(post.content)
                 }}
